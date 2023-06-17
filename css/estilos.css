@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa&family=Nunito&display=swap'); /** COMFORTAA + NUNITO */
+
+* { /* RESET */
+    margin: 0; /* margen de la cajita */
+    padding: 0; /* margen contenido */
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Nunito', sans-serif;
+    background-color: #FAFAFA;
+    color: #202020;
+}
+
+/* HEADER */
+
+header {
+    margin: 1%;
+    padding: 1%;
+}
+
+.video-head {
+    bottom: 0;
+    height: 100vh;
+    z-index: 7;
+}
+
+.barra {
+    position: sticky;
+    width: 100%;
+    top: 0;
+    padding: 5px;
+    z-index: 10;
+    font-size: 1.2rem;
+}
+
+nav {
+    margin: 1%;
+    padding: 1%;
+}
+
+ul {
+    list-style: none;
+}
+
+li {
+    display : inline-block;
+    font-size: 1.2rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+.link-blanco {
+    color: whitesmoke;
+}
+
+.link-negro {
+    color: #202020;
+}
+
+/* MAIN */
+
+main {
+    margin: 3%;
+    padding: 3%;
+    background-color: whitesmoke;
+}
+
+h1 { 
+    font-family: 'Comfortaa', cursive;
+    font-size: 2rem;
+}
+
+.destacados {
+    display: inline-block;
+    width: 21%;
+}
+
+.galeria { 
+    background-color: #202020;
+    color: #FAFAFA;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 2rem;
+    height: 50vh;
+    display: flex;
+}
+
+.foto {
+    width: 192px;
+    object-fit: cover;
+    display: inline-block;
+}
+
+.fotito {
+    width: 300px;
+}
+
+.local-guide {
+    width: 100%;
+}
+
+/* BLOG */
+
+.blog {
+    width: 61%;
+}
+
+.blogsito {
+    width: 21%;
+    background-color: whitesmoke;
+}
+
+.blog-in {
+    display: inline;
+}
+
+.blog-firma {
+    height: 60px;
+    border-radius: 50%;
+}
+
+.blog-fecha {
+    color: gray;
+}
+
+.blog-publi {
+    width: 100%;
+}
+
+/* WHATSAPP */
+.boton-wp { 
+    position: fixed;
+    bottom: 10vh;
+    right: 5vh;
+    z-index: 5;
+    color: #128C7E;
+    font-size: 3.5rem;
+}
+
+/* FOOTER */
+
+footer {
+
+    background-color: #252525;
+    color: #FAFAFA;
+    height: 37vh;
+}
