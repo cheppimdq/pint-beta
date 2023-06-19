@@ -255,6 +255,7 @@ p {
 /* PUBLICIDAD */
 
 .banner-publicidad {
+    display: block;
     width: 82%;
 }
 
