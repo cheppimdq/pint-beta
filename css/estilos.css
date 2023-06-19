@@ -17,8 +17,24 @@ body {
 
 /* HEADER */
 
-nav {
+.barra {
+    position: sticky;
+    z-index: 5;
+    top: 0;
+    right: 0;
+    left:0;
+}
+
+.logo {
+    width: 200px;
+}
+
+.video-header {
     width: 100%;
+}
+
+nav {
+    font-size: 1.3rem;
 }
 
 ul {
@@ -27,34 +43,20 @@ ul {
 
 li {
     display: inline-block;
-    font-size: 1.3rem;
 }
 
 a {
     text-decoration: none;
 }
 
-.video-head {
-    bottom: 0;
-    height: 100vh;
-    z-index: 7;
-}
-
-.barra {
-    position: sticky;
-    width: 100%;
-    top: 0;
-    padding: 5px;
-    z-index: 10;
-    font-size: 1.3rem;
-}
-
 .link-blanco {
     color: #FAFAFA;
+    font-size: 1.3rem;
 }
 
 .link-negro {
     color: #212121;
+        font-size: 1.3rem;
 }
 
 /* MAIN */
@@ -62,6 +64,7 @@ a {
 main {
     margin: 3%;
     padding: 3%;
+    width: 100%;
 }
 
 h1 { 
@@ -72,43 +75,51 @@ p {
     font-size: 1rem;
 }
 
-.destacados {
-    display: inline-block;
-    width: 21%;
+/* INDEX */
+
+.index-header {
+    height: 100vh;
 }
 
-.galeria { 
-    background-color: #212121;
-    color: #FAFAFA;
-    text-align: center;
-    margin-top: 20px;
-    font-size: 2rem;
-    height: 50vh;
-    display: flex;
+.index-main {
+    height: 150vh;
+    z-index: 10;
 }
 
-.foto {
-    width: 192px;
-    object-fit: cover;
-    display: inline-block;
-}
-
-.fotito {
-    width: 300px;
-}
-
-
-/* BLOG */
-
-.blog {
-    width: 57%;
-    margin: 1%;
-    padding: 1%;
+.index-destacado {
+    width: 90%;
     background-color: whitesmoke;
 }
 
-.blogsito {
+.index-foto {
+    width: 66%;
+}
+
+.index-articulo {
+    display: inline-block;
+    background-color: whitesmoke;
     width: 21%;
+}
+
+.index-fotito {
+    width: 100%;
+}
+
+.index-parallax {
+    background-image: url(../assets/img/blog/blog-cover.jpeg);
+    height: 42vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* BLOG */
+
+.blog-articulo {
+    width: 57%;
+    margin: 1%;
+    padding: 1%;
     background-color: whitesmoke;
 }
 
@@ -125,13 +136,21 @@ p {
     color: #757575;
 }
 
+.blog-foto {
+    width: 100%;
+}
+
 .blog-texto {
     text-align: justify;
 }
 
-.blog-publi {
-    margin: 1%;
-    padding: 1%;
+.blog-mini {
+    width: 21%;
+    background-color: whitesmoke;
+}
+
+.blog-mini-foto {
+    width: 100%;
 }
 
 /* COMUNIDADES */
@@ -174,8 +193,10 @@ p {
 
 /* PUBLICIDAD */
 
-.local-guide {
+.banner-publicidad {
     width: 100%;
+    margin: 1%;
+    padding: 1%;
 }
 
 /* WHATSAPP */
@@ -192,10 +213,12 @@ p {
 /* FOOTER */
 
 footer {
+    width: 100%;
     padding: 1%;
     background-color: #212121;
     color: #FAFAFA;
     height: 37vh;
+    z-index: 5;
 }
 
 /* .·. */

@@ -13,9 +13,9 @@
 
     <body> <!-- HEADER + NAV + MAIN + SECTION + FOOTER -->
 
-        <header> <!-- HEADER CON UN VIDEO DE FONDO -->
+        <header class="index-header">
             <div class="barra">  <!-- BARRA DE NAVEGACION -->
-                <a href="./index.html"><img src="./assets/img/marca/logo-3.png" alt="Logo" width="200"></a> <!-- LOGO | CAMBIAR COMO ESCALAR IMG -->
+                <a href="./index.html"><img class="logo" src="./assets/img/marca/logo-3.png" alt="Logo"></a> <!-- LOGO | CAMBIAR COMO ESCALAR IMG -->
                 <nav>
                     <ul>
                         <li><a class="link-blanco" href="https://www.pint.com.ar/" target="_blank">pint.com.ar</a></li>
@@ -27,44 +27,97 @@
                     </ul>
                 </nav>
             </div>
-            <!-- VIDEO HEAD -->
-            <div class="video-head">
-                <video autoplay muted loop>
-                    <source src="./assets/video/video-head.mp4" type="video/mp4">
-                </video>
-            </div>
+            <video class="video-header" autoplay muted loop src="./assets/video/video-head.mp4"></video> <!-- VIDEO DE FONDO -->
         </header>
 
-        <main> <!-- Contenido principal, ni barras laterales ni propagandas -->
-            <h1>Blog Pint</h1> <!-- uno solo h1 excepto que tambien tengamos un h1 dentro de un article -->
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore dolorum reprehenderit aliquid libero odio dignissimos labore minus consequatur quae aliquam blanditiis velit pariatur obcaecati quia corrupti maiores, quasi, voluptas est!</p>
-            <section> <!-- ARTICULOS DE COMUNIDADES -->
-                <div class="destacado"> <!-- etiqueta de bloque, ocupa todo el ancho del viewport (navegador) -->
-                    <h2>La Casa Curutchet</h2>
-                    <img class="fotito" src="./assets/img/plaza/plaza-1.jpg" alt="Fachada Casa Curutchet - La Plata" loading="lazy">
-                    <p>La gran obra del padre de la arquitectura moderna en La Plata</p>
-                    <a target="_blank" href="https://pint.com.ar/blog/articulo/la-gran-obra-del-padre-de-la-arquitectura-moderna-en-la-plata-la-casa-curutchet-2">+</a>
-                </div>
-                <div class="destacado">
-                    <h2>La Casa Curutchet</h2>
-                    <img class="fotito" src="./assets/img/plaza/plaza-2.jpg" alt="Fachada Casa Curutchet - La Plata" loading="lazy">
-                    <p>La gran obra del padre de la arquitectura moderna en La Plata</p>
-                    <a target="_blank" href="https://pint.com.ar/blog/articulo/la-gran-obra-del-padre-de-la-arquitectura-moderna-en-la-plata-la-casa-curutchet-2">+</a>
-                </div>
-                <div class="destacado">
-                    <h2>La Casa Curutchet</h2>
-                    <img class="fotito" src="./assets/img/plaza/plaza-3.jpg" alt="Fachada Casa Curutchet - La Plata" loading="lazy">
-                    <p>La gran obra del padre de la arquitectura moderna en La Plata</p>
-                    <a target="_blank" href="https://pint.com.ar/blog/articulo/la-gran-obra-del-padre-de-la-arquitectura-moderna-en-la-plata-la-casa-curutchet-2">+</a>
+        <main class="index-main">
+            <h1>Comunidades</h1>
+            <section>
+                <div class="index-destacado"> <!-- COMUNIDAD DESTACADA -->
+                    <a class="link-negro" href="./pages/ejemplo.html">
+                        <img class="index-foto" src="./assets/img/plaza/plaza-1.jpg" alt="Comunidad destacada">
+                    </a>
+                    <a class="link-negro" href="./pages/ejemplo.html"><h2>Plaza 19 de noviembre en La Plata, un espacio para el encuentro y la recreación</h2></a>
+                    <p>La ciudad de La Plata es reconocida por su rica arquitectura y su amplia gama de espacios verdes, entre los cuales se destaca una de las veinticuatro plazas y parques distribuidos estratégicamente en el casco urbano. La Plaza "19 de Noviembre" es, sin duda, un espacio verde de gran valor paisajístico en la historia de esta gran ciudad.</p>
                 </div>
             </section>
+
+            <section> <!-- ARTICULOS DE COMUNIDADES -->
+
+                <div class="index-articulo"> <!-- COMUNIDAD -->
+                    <a class="link-negro" href="./pages/ejemplo.html">
+                        <img class="index-fotito" src="./assets/img/plaza/plaza-1.jpg" alt="Comunidad destacada">
+                    </a>
+                    <a class="link-negro" href="./pages/ejemplo.html"><h2>Plaza 19 de noviembre en La Plata, un espacio para el encuentro y la recreación</h2></a>
+                    <p>Un espacio para el encuentro y la recreación.</p>
+                </div>
+
+                <div class="index-articulo"> <!-- COMUNIDAD -->
+                    <a class="link-negro" href="./pages/ejemplo.html">
+                        <img class="index-fotito" src="./assets/img/plaza/plaza-1.jpg" alt="Comunidad destacada">
+                    </a>
+                    <a class="link-negro" href="./pages/ejemplo.html"><h2>Plaza 19 de noviembre en La Plata, un espacio para el encuentro y la recreación</h2></a>
+                    <p>Un espacio para el encuentro y la recreación.</p>
+                </div>
+
+                <div class="index-articulo"> <!-- COMUNIDAD -->
+                    <a class="link-negro" href="./pages/ejemplo.html">
+                        <img class="index-fotito" src="./assets/img/plaza/plaza-1.jpg" alt="Comunidad destacada">
+                    </a>
+                    <a class="link-negro" href="./pages/ejemplo.html"><h2>Plaza 19 de noviembre en La Plata, un espacio para el encuentro y la recreación</h2></a>
+                    <p>Un espacio para el encuentro y la recreación.</p>
+                </div>
+
+                <div class="index-articulo"> <!-- COMUNIDAD -->
+                    <a class="link-negro" href="./pages/ejemplo.html">
+                        <img class="index-fotito" src="./assets/img/plaza/plaza-1.jpg" alt="Comunidad destacada">
+                    </a>
+                    <a class="link-negro" href="./pages/ejemplo.html"><h2>Plaza 19 de noviembre en La Plata, un espacio para el encuentro y la recreación</h2></a>
+                    <p>Un espacio para el encuentro y la recreación.</p>
+                </div>
+
+            </section>
+
         </main>
 
-        <article> <!-- PUBLICIDAD -->
-            <div class="publi">            
-                <a target="_blank" href="https://pint.com.ar/"><img src="./assets/img/blog/blog-publicidad.jpg" alt="Publicidad"></a>
+        <article>
+            <div class="index-parallax"> <!-- BLOG DESTACADO -->
+                <a class="link-blanco" href="./pages/blog.html"><h1>“Realidad virtual” y nuevos paradigmas</h1></a>
+                <div class="index-firma">
+                    <div>
+                        <h2>por Jor Amoreo Casotti</a></h2>
+                        <p>CEO & Founder - Proptech Pint</p>
+                    </div>
             </div>
         </article>
+
+        
+
+        <article>
+
+                <div class="index-articulo"> <!-- COMUNIDAD -->
+                    <a class="link-negro" href="./pages/ejemplo.html">
+                        <img class="index-fotito" src="./assets/img/plaza/plaza-1.jpg" alt="Comunidad destacada">
+                    </a>
+                    <a class="link-negro" href="./pages/ejemplo.html"><h2>Plaza 19 de noviembre en La Plata, un espacio para el encuentro y la recreación</h2></a>
+                    <p>Un espacio para el encuentro y la recreación.</p>
+                </div>
+
+                <div class="index-articulo"> <!-- COMUNIDAD -->
+                    <a class="link-negro" href="./pages/ejemplo.html">
+                        <img class="index-fotito" src="./assets/img/plaza/plaza-1.jpg" alt="Comunidad destacada">
+                    </a>
+                    <a class="link-negro" href="./pages/ejemplo.html"><h2>Plaza 19 de noviembre en La Plata, un espacio para el encuentro y la recreación</h2></a>
+                    <p>Un espacio para el encuentro y la recreación.</p>
+                </div>
+
+            </div>
+
+        </article>
+
+        <div class="banner-publicidad"> <!-- PUBLICIDAD -->          
+            <a target="_blank" href="https://pint.com.ar/"><img src="./assets/img/blog/blog-publicidad.jpg" alt="Publicidad"></a>
+        </div>
 
         <div> <!-- WHATSAPP -->
             <a class="boton-wp" href="https://api.whatsapp.com/send?phone=5492213562858" target="_blank">
