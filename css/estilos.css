@@ -14,7 +14,6 @@ body {
     font-family: 'Nunito', sans-serif;
     color: #212121;
     overflow-x: hidden;
-    width: 100%;
 }
 
 /* HEADER */
@@ -64,7 +63,7 @@ a {
 
 .link-negro {
     color: #212121;
-        font-size: 1.3rem;
+    font-size: 1.3rem;
 }
 
 /* MAIN */
@@ -85,74 +84,62 @@ p {
 
 .index-header {
     height: 100vh;
+    margin: 2%;
+    padding: 2%;
 }
 
 .index-main {
-    background-color: whitesmoke;
-    border: 2%;
-    margin: 2%;
-    padding: 2%;
-    width: 57%;
+    width: 60%;
     display: inline-block;
+    align-items: center;
+    justify-content: center;
 }
 
 .index-destacado {
+    display: inline-block;
     width: 100%;
-    display: inline-block;
-}
-
-.index-comunidades {
-    display: inline-block;
-    width: 30%;
-}
-
-.index-comunidades h2 {
-    font-size: 1rem;
-    text-align: justify;
-}
-
-.index-comunidades p {
-    font-size: 1rem;
 }
 
 .index-foto {
     width: 100%;
 }
 
-.index-articulo {
+.index-comunidad {
     display: inline-block;
-    background-color: #FAFAFA;
-    border: 2%;
-    margin: 2%;
-    padding: 2%;
-    width: 27%;
+    width: 45%;
 }
 
-.index-articulo h2 {
+.index-textito {
+    font-size: 1rem;
+}
+
+.index-fotito {
+    width: 100%;
+}
+
+.index-main h3 {
     font-size: 0.9rem;
     text-align: justify;
 }
 
-.index-articulo a p {
+.index-main a p {   
     font-weight: bolder;
     font-size: 0.9rem;
+    text-align: justify;
 }
 
-.index-fotito {
-    width: 100%
+.index-aside {
+    display: inline-block;
+    position: relative;
+    margin: 2%;
+    padding: 2%;
+    width: 27%;
+    background-color: whitesmoke;
 }
 
-.parallax {
+.foto-aside {
     width: 100%;
-    background-image: url(../assets/img/blog/blog-cover.jpeg);
-    height: 42vh;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
 }
-
-
 
 /* BLOG */
 
@@ -160,11 +147,11 @@ p {
     width: 57%;
     margin: 1%;
     padding: 1%;
-    background-color: whitesmoke;
+    display: inline-block;
 }
 
 .blog-in {
-    display: inline;
+    display: inline-block;
 }
 
 .blog-firma {
@@ -180,13 +167,12 @@ p {
     width: 100%;
 }
 
-.blog-texto {
-    text-align: justify;
+.blog-recomendados {
+    display: inline-block;
 }
 
 .blog-mini {
     width: 21%;
-    background-color: whitesmoke;
 }
 
 .blog-mini-foto {
@@ -201,7 +187,6 @@ p {
     margin: 1%;
     padding: 1%;
     position: relative;
-    background-color: whitesmoke;
 }
 
 .comun-section {
@@ -210,7 +195,6 @@ p {
     width: 90%;
     margin: 1%;
     padding: 1%;
-    background-color: #FAFAFA;
 }
 
 .comun-foto {
@@ -219,10 +203,10 @@ p {
 
 .linea {
     border-top: 1px solid #212121;
-    height: 2px;
-    border: 3%;
+    height: 1px;
     margin: 3%;
-    padding: 3%;
+    padding: 1%;
+    display: block;
 }
 
 /* EMPRESA */
@@ -255,6 +239,7 @@ p {
 /* PUBLICIDAD */
 
 .banner-publicidad {
+    display: inline;
     width: 100%;
 }
 
