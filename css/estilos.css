@@ -143,20 +143,25 @@ p {
 
 /* BLOG */
 
-.blog-articulo {
-    width: 57%;
-    margin: 1%;
-    padding: 1%;
+.blog-main {
+    width: 60%;
     display: inline-block;
+    align-items: center;
+    justify-content: center;
 }
 
 .blog-in {
+    width: 100%;
     display: inline-block;
 }
 
-.blog-firma {
-    height: 60px;
+.blog-fotito {
+    width: 60px;
     border-radius: 50%;
+}
+
+.blog-firma {
+    display: inline-block;
 }
 
 .blog-fecha {
@@ -167,15 +172,20 @@ p {
     width: 100%;
 }
 
-.blog-recomendados {
+.blog-aside {
     display: inline-block;
+    position: relative;
+    margin: 2%;
+    padding: 2%;
+    width: 27%;
+    background-color: whitesmoke;
 }
 
 .blog-mini {
-    width: 21%;
+    display: inline-block;
 }
 
-.blog-mini-foto {
+.blog-recomendado {
     width: 100%;
 }
 
