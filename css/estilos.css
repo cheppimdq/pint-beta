@@ -14,6 +14,7 @@ body {
     font-family: 'Nunito', sans-serif;
     color: #212121;
     overflow-x: hidden;
+    width: 100%;
 }
 
 /* HEADER */
@@ -72,6 +73,10 @@ h1 {
     font-family: 'Comfortaa', cursive;
 }
 
+h2 {
+    font-family: 'Comfortaa', cursive;
+}
+
 p {
     font-size: 1rem;
 }
@@ -83,32 +88,61 @@ p {
 }
 
 .index-main {
-    width: 100%;
-    border: 1%;
-    margin: 1%;
-    padding: 1%;
+    background-color: whitesmoke;
+    border: 2%;
+    margin: 2%;
+    padding: 2%;
+    width: 57%;
+    display: inline-block;
 }
 
 .index-destacado {
-    width: 90%;
-    background-color: whitesmoke;
+    width: 100%;
+    display: inline-block;
+}
+
+.index-comunidades {
+    display: inline-block;
+    width: 30%;
+}
+
+.index-comunidades h2 {
+    font-size: 1rem;
+    text-align: justify;
+}
+
+.index-comunidades p {
+    font-size: 1rem;
 }
 
 .index-foto {
-    width: 66%;
+    width: 100%;
 }
 
 .index-articulo {
     display: inline-block;
-    background-color: whitesmoke;
-    width: 21%;
+    background-color: #FAFAFA;
+    border: 2%;
+    margin: 2%;
+    padding: 2%;
+    width: 27%;
+}
+
+.index-articulo h2 {
+    font-size: 0.9rem;
+    text-align: justify;
+}
+
+.index-articulo a p {
+    font-weight: bolder;
+    font-size: 0.9rem;
 }
 
 .index-fotito {
-    width: 100%;
+    width: 100%
 }
 
-.index-parallax {
+.parallax {
     width: 100%;
     background-image: url(../assets/img/blog/blog-cover.jpeg);
     height: 42vh;
@@ -117,6 +151,8 @@ p {
     background-repeat: no-repeat;
     background-size: cover;
 }
+
+
 
 /* BLOG */
 
@@ -159,17 +195,34 @@ p {
 
 /* COMUNIDADES */
 
+.comun-main {
+    width: 100%;
+    border: 1%;
+    margin: 1%;
+    padding: 1%;
+    position: relative;
+    background-color: whitesmoke;
+}
+
 .comun-section {
     display: inline-block;
     text-align: justify;
     width: 90%;
     margin: 1%;
     padding: 1%;
-    background-color: whitesmoke;
+    background-color: #FAFAFA;
 }
 
 .comun-foto {
     width: 33%;
+}
+
+.linea {
+    border-top: 1px solid #212121;
+    height: 2px;
+    border: 3%;
+    margin: 3%;
+    padding: 3%;
 }
 
 /* EMPRESA */
@@ -219,6 +272,7 @@ p {
 /* FOOTER */
 
 footer {
+    width: 100%;
     padding: 1%;
     background-color: #212121;
     color: #FAFAFA;
