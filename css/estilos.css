@@ -255,8 +255,7 @@ p {
 /* PUBLICIDAD */
 
 .banner-publicidad {
-    display: block;
-    width: 82%;
+    width: 100%;
 }
 
 /* WHATSAPP */
