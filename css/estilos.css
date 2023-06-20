@@ -29,13 +29,26 @@ header {
     display: block; /*DISPLAY EN BLOQUE - CONTENEDOR - WIDTH=100% */
 }
 
-.barra { /* BARRA DE NAVEGACION */
+.nav-stick { /* BARRA DE NAVEGACION */
     width: 100%;
     display: flex;
     align-items: center;
     position: sticky;
     top: 0;
     z-index: 10;
+    overflow:hidden
+}
+
+.nav-fix { /* BARRA DE NAVEGACION */
+    width: 100%;
+    height: 27vh;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    z-index: 10;
+    background-color: #FAFAFA;
+    overflow:hidden
 }
 
 .logo { /* LOGO */
@@ -143,11 +156,18 @@ a { /* ANCLAS */
 
 /* BLOG */
 
+.blog-titulo {
+    display: block;
+}
+
 .blog-main {
     width: 60%;
     display: inline-block;
     align-items: center;
     justify-content: center;
+    border: 2%;
+    margin: 2%;
+    padding: 2%;
 }
 
 .blog-in {
@@ -194,9 +214,9 @@ a { /* ANCLAS */
 .comun-main {
     display: block;
     width: 100%;
-    border: 1%;
-    margin: 1%;
-    padding: 1%;
+    border: 2%;
+    margin: 2%;
+    padding: 2%;
     position: relative;
 }
 
@@ -206,6 +226,7 @@ a { /* ANCLAS */
     width: 90%;
     margin: 1%;
     padding: 1%;
+    background-color: whitesmoke;
 }
 
 .comun-foto {
@@ -247,7 +268,6 @@ a { /* ANCLAS */
 /* CONTACTO */
 
 .contacto-header {
-    background-color: #212121;
     height: 66vh;
     background-image: url(../assets/img/contacto/contacto-header.jpg);
     background-attachment: fixed;
@@ -296,8 +316,13 @@ a { /* ANCLAS */
 }
 
 .banner-publicidad { /* PUBLICIDAD */
-    display: block;
     width: 100%;
+    display: inline-block;
+}
+
+.blog-publicidad {
+    height: 150px;
+    display: inline-block;
 }
 
 .boton-wp { /* WHATSAPP */
@@ -321,4 +346,3 @@ footer {
 }
 
 /* .·. */
-
