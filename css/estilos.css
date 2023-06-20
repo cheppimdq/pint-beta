@@ -156,6 +156,14 @@ a { /* ANCLAS */
 
 /* BLOG */
 
+.blog {
+    display: block;
+    width: 100%;
+    border: 2%;
+    margin: 2%;
+    padding: 2%;
+}
+
 .blog-titulo {
     display: block;
 }
@@ -165,9 +173,6 @@ a { /* ANCLAS */
     display: inline-block;
     align-items: center;
     justify-content: center;
-    border: 2%;
-    margin: 2%;
-    padding: 2%;
 }
 
 .blog-in {
@@ -194,7 +199,6 @@ a { /* ANCLAS */
 
 .blog-aside {
     display: inline-block;
-    position: relative;
     margin: 2%;
     padding: 2%;
     width: 27%;
@@ -212,12 +216,11 @@ a { /* ANCLAS */
 /* COMUNIDADES */
 
 .comun-main {
-    display: block;
+    display: inline-block;
     width: 100%;
     border: 2%;
     margin: 2%;
     padding: 2%;
-    position: relative;
 }
 
 .comun-section {
@@ -316,13 +319,13 @@ a { /* ANCLAS */
 }
 
 .banner-publicidad { /* PUBLICIDAD */
-    width: 100%;
     display: inline-block;
+    width: 100%;
 }
 
 .blog-publicidad {
-    height: 150px;
     display: inline-block;
+    height: 150px;
 }
 
 .boton-wp { /* WHATSAPP */
