@@ -2,10 +2,8 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa&family=Nunito&display=swap');
 
-/* RESET */
-
-* {
-    margin: 0; /* margen de la cajita */
+* { /* RESET */
+    margin: 0; /* margen cajita */
     padding: 0; /* margen contenido */
     box-sizing: border-box;
 }
@@ -17,10 +15,31 @@ body {
     width: 100%;
 }
 
+h1, h2, h3, h4, h5, h6 { 
+    font-family: 'Comfortaa', cursive;
+}
+
+p {
+    font-size: 1rem;
+}
+
 /* HEADER */
 
 header {
     display: block; /*DISPLAY EN BLOQUE - CONTENEDOR - WIDTH=100% */
+}
+
+.barra { /* BARRA DE NAVEGACION */
+    width: 100%;
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.logo { /* LOGO */
+    width: 200px;
 }
 
 nav {
@@ -36,42 +55,8 @@ li {
     display: inline-block;
 }
 
-a {
+a { /* ANCLAS */
     text-decoration: none;
-}
-
-.barra {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    position: sticky;
-    top: 0;
-    z-index: 10;
-}
-
-.logo {
-    width: 200px;
-}
-
-.video-header {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    display: block;
-    z-index: 5;
-}
-
-/* MAIN */
-
-h1, h2, h3, h4, h5, h6 { 
-    font-family: 'Comfortaa', cursive;
-}
-
-p {
-    font-size: 1rem;
 }
 
 .link-blanco {
@@ -84,33 +69,15 @@ p {
     font-size: 1.3rem;
 }
 
-/* PUBLICIDAD */
-
-.banner-publicidad {
-    display: block;
+.video-header { /* VIDEO HEADER */
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
-}
-
-/* WHATSAPP */
-
-.boton-wp { 
-    position: fixed;
-    bottom: 6vh;
-    right: 6vh;
-    color: #128C7E;
-    font-size: 3.5rem;
-    z-index: 0; /* deberia quedar denajo del footer */
-}
-
-/* FOOTER */
-
-footer {
+    height: 100%;
+    object-fit: cover;
     display: block;
-    height: 50vh;
-    padding: 1%;
-    background-color: #212121;
-    color: #FAFAFA;
-    z-index: 10;
+    z-index: 5;
 }
 
 /* INDEX */
@@ -277,6 +244,45 @@ footer {
     color: #0077B5;   
 }
 
+/* CONTACTO */
+
+.contacto-header {
+    background-color: #212121;
+    height: 66vh;
+    background-image: url(../assets/img/contacto/contacto-header.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.contacto-main {
+    height: 33vh;
+    width: 57%;
+    display: inline-block;
+}
+
+.contacto-tabla {
+    width: 100%;
+    display: inline-block;
+}
+
+.contacto-ficha {
+    width: 37%;
+    display: inline-block;
+}
+
+.contacto-iso {
+    height: 20vh;
+    display: inline-block;
+}
+
+.footer-maps {
+    height: 66vh;
+    width: 100%;
+    border: none;
+}
+
 /* EJEMPLO */
 
 .matterport { 
@@ -287,6 +293,31 @@ footer {
     width: 100%;
     height: 100%;
     object-fit: cover;
+}
+
+.banner-publicidad { /* PUBLICIDAD */
+    display: block;
+    width: 100%;
+}
+
+.boton-wp { /* WHATSAPP */
+    position: fixed;
+    bottom: 6vh;
+    right: 6vh;
+    color: #128C7E;
+    font-size: 3.5rem;
+    z-index: 0; /* deberia quedar denajo del footer */
+}
+
+/* FOOTER */
+
+footer {
+    display: block;
+    height: 33vh;
+    padding: 1%;
+    background-color: #212121;
+    color: #FAFAFA;
+    z-index: 10;
 }
 
 /* .·. */

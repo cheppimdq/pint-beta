@@ -13,7 +13,7 @@
 
     <body> <!-- HEADER + NAV + MAIN + SECTION + FOOTER -->
 
-        <header>
+        <header class="contacto-header">
             <div class="barra"> <!-- BARRA DE NAVEGACION -->
                 <a href="../index.html"><img class="logo" src="../assets/img/marca/logo-2.png" alt="Logo"></a> <!-- LOGO | CAMBIAR COMO ESCALAR IMG -->
                 <nav>
@@ -29,29 +29,28 @@
             </div> 
         </header>
         
-        <main> <!-- FORMULARIO DE CONTACTO -->
+        <main class="contacto-main"> <!-- FORMULARIO DE CONTACTO -->
             <h1>Contacto</h1>
             <p>Para más información sobre nuestros servicios, déjenos un mensaje y un representante se pondrá en contacto con usted.</p>
-            <div>
                 <form action="./404.html">
-                    <div>
-                        <input id="nombre" type="text" placeholder="nombre" required="">
+                    <div class="contacto-tabla">
+                        <input type="text" placeholder="nombre" required="">
                     </div>
-                    <div>
+                    <div class="contacto-tabla">
                         <input type="email" placeholder="email" required="">
                     </div>
-                    <div>
-                        <textarea name="" id="" cols="30" rows="10" placeholder="mensaje" required=""></textarea>
+                    <div class="contacto-tabla">
+                        <textarea placeholder="mensaje" required=""></textarea>
                     </div>
                     <div>
                         <input type="reset" value="Borrar"> <!-- SE PUEDE BORRAR? -->
                         <input type="submit" value="Enviar">
                     </div>
                 </form>
-            </div>
         </main>
 
-        <article>
+        <article class="contacto-ficha">
+            <img class="contacto-iso" src="../assets/img/marca/comar-1.png" alt="">
             <h2>Acercate e inspirate</h2>
             <a class="link-negro" href="https://api.whatsapp.com/send?phone=5492213562858"><p>+54 9 221 356-2858</p></a>
             <a class="link-negro" href="mailto:contacto@pint.com.ar"><p>contacto@pint.com.ar</p></a>
@@ -64,9 +63,7 @@
         </div>
 
         <!-- MAPA | CONFIGURAR BIEN EL CSS -->
-        <div>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m13!1m8!1m3!1d6546.515372992841!2d-58.023869!3d-34.874875!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMzTCsDUyJzI5LjYiUyA1OMKwMDEnMjUuOSJX!5e0!3m2!1ses!2sus!4v1686799133071!5m2!1ses!2sus" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </div>
+        <iframe class="footer-maps" src="https://www.google.com/maps/embed?pb=!1m13!1m8!1m3!1d6546.515372992841!2d-58.023869!3d-34.874875!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMzTCsDUyJzI5LjYiUyA1OMKwMDEnMjUuOSJX!5e0!3m2!1ses!2sus!4v1686799133071!5m2!1ses!2sus" loading="lazy"></iframe>
 
         <footer> <!-- DERECHOS, LEGALES, CONTACTO -->
             <h4>pint.com.ar</h4>
