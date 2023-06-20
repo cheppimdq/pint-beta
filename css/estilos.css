@@ -14,34 +14,18 @@ body {
     font-family: 'Nunito', sans-serif;
     color: #212121;
     overflow-x: hidden;
+    width: 100%;
 }
 
 /* HEADER */
 
-.barra {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    position: sticky;
-    top: 0;
-    z-index: 999;
-}
-
-.logo {
-    width: 200px;
-}
-
-.video-header {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+header {
+    display: block; /*DISPLAY EN BLOQUE - CONTENEDOR - WIDTH=100% */
 }
 
 nav {
     font-size: 1.3rem;
+    display: inline; /*DISPLAY EN LINEA */
 }
 
 ul {
@@ -56,6 +40,40 @@ a {
     text-decoration: none;
 }
 
+.barra {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.logo {
+    width: 200px;
+}
+
+.video-header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    z-index: 5;
+}
+
+/* MAIN */
+
+h1, h2, h3, h4, h5, h6 { 
+    font-family: 'Comfortaa', cursive;
+}
+
+p {
+    font-size: 1rem;
+}
+
 .link-blanco {
     color: #FAFAFA;
     font-size: 1.3rem;
@@ -66,18 +84,33 @@ a {
     font-size: 1.3rem;
 }
 
-/* MAIN */
+/* PUBLICIDAD */
 
-h1 { 
-    font-family: 'Comfortaa', cursive;
+.banner-publicidad {
+    display: block;
+    width: 100%;
 }
 
-h2 {
-    font-family: 'Comfortaa', cursive;
+/* WHATSAPP */
+
+.boton-wp { 
+    position: fixed;
+    bottom: 6vh;
+    right: 6vh;
+    color: #128C7E;
+    font-size: 3.5rem;
+    z-index: 0; /* deberia quedar denajo del footer */
 }
 
-p {
-    font-size: 1rem;
+/* FOOTER */
+
+footer {
+    display: block;
+    height: 50vh;
+    padding: 1%;
+    background-color: #212121;
+    color: #FAFAFA;
+    z-index: 10;
 }
 
 /* INDEX */
@@ -192,6 +225,7 @@ p {
 /* COMUNIDADES */
 
 .comun-main {
+    display: block;
     width: 100%;
     border: 1%;
     margin: 1%;
@@ -221,8 +255,16 @@ p {
 
 /* EMPRESA */
 
+.empresa-marca {
+    width: 25%;
+}
+
+.empresa-columnas {
+    display: inline-block;
+}
+
 .empresa-persona {
-    display: inline;
+    display: inline-block;
 }
 
 .empresa-perfil {
@@ -238,6 +280,7 @@ p {
 /* EJEMPLO */
 
 .matterport { 
+    display: block;
     position: absolute;
     top: 0;
     left: 0;
@@ -246,33 +289,5 @@ p {
     object-fit: cover;
 }
 
-/* PUBLICIDAD */
-
-.banner-publicidad {
-    display: inline;
-    width: 100%;
-}
-
-/* WHATSAPP */
-
-.boton-wp { 
-    position: fixed;
-    bottom: 6vh;
-    right: 6vh;
-    z-index: 5;
-    color: #128C7E;
-    font-size: 3.5rem;
-}
-
-/* FOOTER */
-
-footer {
-    width: 100%;
-    padding: 1%;
-    background-color: #212121;
-    color: #FAFAFA;
-    height: 37vh;
-    z-index: 5;
-}
-
 /* .·. */
+
