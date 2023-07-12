@@ -35,20 +35,28 @@ p {
 .nav-fix { /* BARRA DE NAVEGACION */
     width: 100%;
     height: 21vh;
-    display: flex;
-    align-items: center;
     background-color: #FAFAFA;
-    overflow: hidden;
+    display: flex; /* LOS HIJOS PASAN A SER FLEXIBLES HABILITA TODAS ESTAS PROP */
+    flex-direction: row; /* FILAS */
+    align-items: center;
+    justify-content: flex-start; /* VALOR POR DEFECTO */
+    flex-wrap: nowrap; /* WRAP VA PARA GALERIA */
+    align-items: center;
 }
 
 .nav-stick { /* BARRA DE NAVEGACION */
     width: 100%;
-    display: flex;
-    align-items: center;
+    height: 21vh;
     position: sticky;
     top: 0;
     z-index: 10;
     overflow: hidden;
+    display: flex; /* LOS HIJOS PASAN A SER FLEXIBLES */
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start; /* ALINEA EN EL EJE PRINCIPAL DEL CONTENEDOR */
+    flex-wrap: nowrap;
+    align-items: center;
 }
 
 .logo { /* LOGO */
@@ -96,30 +104,43 @@ a { /* ANCLAS */
 /* INDEX */
 
 .index-header {
+    display: block;
+    position: relative;
     height: 100vh;
-    margin: 2%;
-    padding: 2%;
+    top: 0;
+    z-index: 10;
 }
 
 .index-main {
     width: 60%;
-    display: inline-block;
+    display: flex; /* LOS HIJOS PASAN A SER FLEXIBLES */
+    flex-direction: column;
     align-items: center;
+    justify-content: space-evenly; /* ALINEA EN EL EJE PRINCIPAL DEL CONTENEDOR */
+    flex-wrap: wrap;
     justify-content: center;
 }
 
+.index-comunidad {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    flex-wrap: nowrap;
+}
+
 .index-destacado {
-    display: inline-block;
-    width: 100%;
+    width: 95%;
+}
+
+.index-section {
+    width: 45%;
 }
 
 .index-foto {
     width: 100%;
-}
-
-.index-comunidad {
-    display: inline-block;
-    width: 45%;
+    height: 100%;
+    object-fit: cover;
 }
 
 .index-textito {
@@ -128,6 +149,8 @@ a { /* ANCLAS */
 
 .index-fotito {
     width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 .index-main h3 {
@@ -242,6 +265,7 @@ a { /* ANCLAS */
     margin: 3%;
     padding: 1%;
     display: block;
+    width: 100%;
 }
 
 /* EMPRESA */
@@ -319,8 +343,15 @@ a { /* ANCLAS */
 }
 
 .banner-publicidad { /* PUBLICIDAD */
-    display: inline-block;
     width: 100%;
+    margin: 2%;
+    display: flex; /* LOS HIJOS PASAN A SER FLEXIBLES */
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start; /* ALINEA EN EL EJE PRINCIPAL DEL CONTENEDOR */
+    flex-wrap: nowrap;
+    align-items: center;
+
 }
 
 .blog-publicidad {
@@ -334,7 +365,7 @@ a { /* ANCLAS */
     right: 6vh;
     color: #128C7E;
     font-size: 3.5rem;
-    z-index: 0; /* deberia quedar denajo del footer */
+    z-index: 0; /* deberia quedar debajo del footer */
 }
 
 /* FOOTER */
