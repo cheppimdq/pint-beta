@@ -4,6 +4,7 @@
     <!-- PRIMER ENTREGA - FALTA COMPLETAR VARIOS ALT, TESTEAR VARIAS ANCLAS Y ARREGLAR 404 -->
 
     <head> <!-- METADATOS -->
+
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- RESPONSIVE WEB DESIGN -->
@@ -11,13 +12,17 @@
         <link rel="shortcut icon" href="./favicon.png" type="image/x-icon"> <!-- FAVICON = 16px -->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous"> <!-- BOOTSTRAP -->
         <link rel="stylesheet" href="./css/estilos.css"> <!-- CSS - DOM - ESTILOS -->
+
     </head>
 
     <body> <!-- HEADER + NAV + MAIN + SECTION + FOOTER -->
 
         <header class="container-fluid index-header">
+
             <div class="nav-stick">  <!-- BARRA DE NAVEGACION -->
+
                 <a href="./index.html"><img class="logo" src="./assets/img/marca/logo-3.png" alt="Logo"></a> <!-- LOGO | CAMBIAR COMO ESCALAR IMG -->
+
                 <nav>
                     <ul>
                         <li><a class="link-blanco" href="https://www.pint.com.ar/" target="_blank">pint.com.ar</a></li>
@@ -28,20 +33,27 @@
                         <li><a class="link-blanco" href="./pages/contacto.html">contacto</a></li>
                     </ul>
                 </nav>
+
             </div>
+
             <video class="video-header" autoplay muted loop src="./assets/video/video-head.mp4"></video> <!-- VIDEO DE FONDO -->
+
         </header>
+
+        <aside class="container-fluid"> <!-- PUBLICIDAD -->          
+            <a target="_blank" href="https://pint.com.ar/"><img class="banner-publicidad" src="./assets/img/local-guide.jpg" alt="Publicidad"></a>
+        </aside>
 
         <main class="container">
 
-            <h1>Comunidades</h1>
-
             <div class="row">
 
-                <div class="col-sm-12 col-md-9">
+                <h1 class="col-sm-12">comunidades</h1>
 
-                    <section class="col-sm-12"> <!-- COMUNIDAD DESTACADA -->
-                            <a class="link-negro" href="./pages/ejemplo.html">
+                <div class="col-sm-12 col-md-9"> <!-- COMUNIDADES -->
+
+                    <section class="col-sm-12"> <!-- DESTACADA -->
+                            <a href="./pages/ejemplo.html">
                                 <img class="index-foto" src="./assets/img/plaza/plaza-1.jpg" alt="Comunidad destacada">
                             </a>
                             <a class="link-negro" href="./pages/ejemplo.html"><h3>Plaza 19 de noviembre en La Plata, un espacio para el encuentro y la recreación</h3></a>
@@ -49,9 +61,8 @@
                     </section>
 
                     <div class="col-sm-12 index-comunidad"> <!-- INDEX COMUNIDAD -->
-
                         <section class="col-md-6 p-1"> <!-- COMUNIDAD -->
-                            <a class="link-negro" href="./pages/ejemplo.html">
+                            <a href="./pages/ejemplo.html">
                                 <img class="index-foto" src="./assets/img/comunidades/regatas.jpg" alt="Comunidad destacada">
                             </a>
                             <div>
@@ -61,7 +72,7 @@
                         </section>
 
                         <section class="col-md-6 p-1"> <!-- COMUNIDAD -->
-                            <a class="link-negro" href="./pages/ejemplo.html">
+                            <a href="./pages/ejemplo.html">
                                 <img class="index-foto" src="./assets/img/comunidades/domo.jpg" alt="Comunidad destacada">
                             </a>
                             <div>
@@ -69,22 +80,20 @@
                                 <p>Este espacio arquitectónico extraordinario se encuentra ubicado en barrio Los Bosquecitos, a solo cinco minutos de Coronel Brandsen y a treinta minutos de La Plata, un lugar mágico que invita a sus huéspedes a vivir una experiencia realmente única dentro de la naturaleza.</p>
                             </div>
                         </section>
-
                     </div>
 
                 </div>
 
                 <div class="col-sm-12 col-md-3 index-aside"> <!-- ASIDE CON ARTICULOS DEL BLOG -->
 
-                    <h2>Blog</h2>
+                    <h2>blog</h2>
 
                     <div> 
                         <a href="./pages/blog.html">
                             <img class="index-foto" src="./assets/img/blog/blog-cover.jpeg" alt="Imagen ilustrativa del articulo">
                         </a>
                         <a class="link-negro" href="./pages/blog.html"><h5>“Realidad virtual” y nuevos paradigmas</h5></a>
-                        <a class="link-negro" href="https://www.linkedin.com/in/jor-amoreo-casotti/" target="_blank"><p>por Jor Amoreo Casotti</p></a>
-                        <p>CEO & Founder - Proptech Pint</p>
+                        <a class="link-negro" href="https://www.linkedin.com/in/jor-amoreo-casotti/" target="_blank"><p>Jor Amoreo Casotti - CEO & Founder Proptech Pint</p></a>
                     </div>
 
                     <div>
@@ -92,8 +101,7 @@
                             <img class="index-foto" src="./assets/img/blog/abrete-sesamo.jpg" alt="Imagen ilustrativa del articulo">
                         </a>
                         <a class="link-negro" href="./pages/blog.html"><h5>Ábrete sésamo: ingreso a la cuarta revolución industrial</h5></a>
-                        <a class="link-negro" href="https://www.linkedin.com/in/jor-amoreo-casotti/" target="_blank"><p>por Gastón Figueras</p></a>
-                        <P>Lic. en Ciencias Políticas y Relaciones Internacionales</P>
+                        <a class="link-negro" href="https://www.linkedin.com/in/jor-amoreo-casotti/" target="_blank"><p>Gastón Figueras - Lic. en Ciencias Políticas y Relaciones Internacionales</p></a>
                     </div>
 
                     <div>
@@ -101,21 +109,22 @@
                             <img class="index-foto" src="./assets/img/blog/color-exito.jpeg" alt="Imagen ilustrativa del articulo">
                         </a>
                         <a class="link-negro" href="./pages/blog.html"><h5>El Color del Éxito</h5></a>
-                        <a class="link-negro" href="https://www.linkedin.com/in/jor-amoreo-casotti/" target="_blank"><p>por Daniel Alejandro Briceño Moreno</p></a>
-                        <p>Lic. en Ciencias Economicas</p>
+                        <a class="link-negro" href="https://www.linkedin.com/in/jor-amoreo-casotti/" target="_blank"><p>Daniel Alejandro Briceño Moreno - Lic. en Ciencias Economicas</p></a>
                     </div>
                 </div>
             </div>
 
         </main>
 
+        <!--
         <article class="container m-2 p-2">
             <h6>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h6>
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusamus ipsam dolor ipsa totam natus iste commodi pariatur consectetur, itaque assumenda, culpa veniam consequatur saepe repudiandae! Omnis odit soluta rem laboriosam.</p>
         </article>
+        -->
 
         <aside class="container-fluid"> <!-- PUBLICIDAD -->          
-            <a target="_blank" href="https://pint.com.ar/"><img class="banner-publicidad" src="./assets/img/publicaciones-inteligentes.jpg" alt="Publicidad"></a>
+            <a target="_blank" href="https://pint.com.ar/"><img class="banner-publicidad" src="./assets/img/difusion-perfecta.jpg" alt="Publicidad"></a>
         </aside>
 
         <div> <!-- WHATSAPP -->
@@ -125,7 +134,7 @@
         </div>
 
         <footer class="container-fluid"> <!-- DERECHOS, LEGALES, CONTACTO -->
-            <h4>pint.com.ar</h4>
+            <h6>pint.com.ar</h6>
             <p>web pint &copy; todos los derechos reservados</p>
             <p>redes sociales </p>
         </footer>

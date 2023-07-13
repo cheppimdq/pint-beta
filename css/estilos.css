@@ -124,61 +124,17 @@ a { /* ANCLAS */
 
 /* BLOG */
 
-.blog {
-    display: block;
-    width: 100%;
-    border: 2%;
-    margin: 2%;
-    padding: 2%;
-}
-
-.blog-titulo {
-    display: block;
-}
-
-.blog-main {
-    width: 60%;
-    display: inline-block;
-    align-items: center;
-    justify-content: center;
-}
-
-.blog-in {
-    width: 100%;
-    display: inline-block;
-}
-
 .blog-fotito {
     width: 60px;
     border-radius: 50%;
-}
-
-.blog-firma {
-    display: inline-block;
 }
 
 .blog-fecha {
     color: #757575;
 }
 
-.blog-foto {
-    width: 100%;
-}
-
-.blog-aside {
-    display: inline-block;
-    margin: 2%;
-    padding: 2%;
-    width: 27%;
+.blogsito {
     background-color: whitesmoke;
-}
-
-.blog-mini {
-    display: inline-block;
-}
-
-.blog-recomendado {
-    width: 100%;
 }
 
 /* COMUNIDADES */
@@ -294,8 +250,7 @@ a { /* ANCLAS */
 }
 
 .blog-publicidad {
-    display: inline-block;
-    height: 150px;
+    height: 22vh;
 }
 
 .boton-wp { /* WHATSAPP */
