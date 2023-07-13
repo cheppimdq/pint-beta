@@ -17,6 +17,7 @@ body {
 
 h1, h2, h3, h4, h5, h6 { 
     font-family: 'Comfortaa', cursive;
+    font-weight: bold;
 }
 
 p {
@@ -63,11 +64,6 @@ p {
     width: 200px;
 }
 
-nav {
-    font-size: 1.3rem;
-    display: inline; /*DISPLAY EN LINEA */
-}
-
 ul {
     list-style: none;
 }
@@ -82,12 +78,10 @@ a { /* ANCLAS */
 
 .link-blanco {
     color: #FAFAFA;
-    font-size: 1.3rem;
 }
 
 .link-negro {
     color: #212121;
-    font-size: 1.3rem;
 }
 
 .video-header { /* VIDEO HEADER */
@@ -104,7 +98,6 @@ a { /* ANCLAS */
 /* INDEX */
 
 .index-header {
-    display: block;
     position: relative;
     height: 100vh;
     top: 0;
@@ -112,13 +105,8 @@ a { /* ANCLAS */
 }
 
 .index-main {
-    width: 60%;
-    display: flex; /* LOS HIJOS PASAN A SER FLEXIBLES */
     flex-direction: column;
-    align-items: center;
-    justify-content: space-evenly; /* ALINEA EN EL EJE PRINCIPAL DEL CONTENEDOR */
     flex-wrap: wrap;
-    justify-content: center;
 }
 
 .index-comunidad {
@@ -165,16 +153,16 @@ a { /* ANCLAS */
 }
 
 .index-aside {
-    display: inline-block;
-    position: relative;
-    margin: 2%;
-    padding: 2%;
-    width: 27%;
     background-color: whitesmoke;
 }
 
 .foto-aside {
     width: 100%;
+}
+
+article {
+    margin: 1%;
+    padding: 1%;
 }
 
 /* BLOG */

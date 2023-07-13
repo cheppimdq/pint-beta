@@ -16,7 +16,7 @@
 
     <body> <!-- HEADER + NAV + MAIN + SECTION + FOOTER -->
 
-        <header class="index-header">
+        <header class="container-fluid index-header">
             <div class="nav-stick">  <!-- BARRA DE NAVEGACION -->
                 <a href="./index.html"><img class="logo" src="./assets/img/marca/logo-3.png" alt="Logo"></a> <!-- LOGO | CAMBIAR COMO ESCALAR IMG -->
                 <nav>
@@ -33,78 +33,91 @@
             <video class="video-header" autoplay muted loop src="./assets/video/video-head.mp4"></video> <!-- VIDEO DE FONDO -->
         </header>
 
-        <main class="index-main">
-            <h1>pint.com.ar</h1>
-            <h2>Comunidades</h2>
-            <section class="index-destacado"> <!-- COMUNIDAD DESTACADA -->
-                    <a class="link-negro" href="./pages/ejemplo.html">
-                        <img class="index-foto" src="./assets/img/plaza/plaza-1.jpg" alt="Comunidad destacada">
-                    </a>
-                    <a class="link-negro" href="./pages/ejemplo.html"><h3>Plaza 19 de noviembre en La Plata, un espacio para el encuentro y la recreación</h3></a>
-                    <p>La ciudad de La Plata es reconocida por su rica arquitectura y su amplia gama de espacios verdes, entre los cuales se destaca una de las veinticuatro plazas y parques distribuidos estratégicamente en el casco urbano. La Plaza "19 de Noviembre" es, sin duda, un espacio verde de gran valor paisajístico en la historia de esta gran ciudad.</p>
-            </section>
-            <div class="linea"></div>
-            <div class="index-comunidad">
-                <section class="index-section"> <!-- COMUNIDAD -->
-                    <a class="link-negro" href="./pages/ejemplo.html">
-                        <img class="index-fotito" src="./assets/img/comunidades/regatas.jpg" alt="Comunidad destacada">
-                    </a>
-                    <div class="index-textito">
-                        <a class="link-negro" href="./pages/ejemplo.html"><h3>Club de Regatas La Plata - 120 años de historia</h3></a>
-                        <p>Luego de la fundación de la ciudad de La Plata en el año 1882 y después de construido el puerto de Ensenada (llamado Puerto La Plata) el Delta del Río Santiago fue el escenario ideal para lugareños e inmigrantes porteños y sus paseos dominicales en búsqueda tanto de naturaleza como de la belleza exótica que proponían la selva marginal y sus arroyos que reemplazan al tradicional paseo del Bosque.</p>
+        <main class="container index-main">
+
+            <h1>Comunidades</h1>
+
+            <div class="row">
+
+                <div class="col-sm-12 col-md-8">
+
+                    <section class="index-destacado"> <!-- COMUNIDAD DESTACADA -->
+                            <a class="link-negro" href="./pages/ejemplo.html">
+                                <img class="index-foto" src="./assets/img/plaza/plaza-1.jpg" alt="Comunidad destacada">
+                            </a>
+                            <a class="link-negro" href="./pages/ejemplo.html"><h3>Plaza 19 de noviembre en La Plata, un espacio para el encuentro y la recreación</h3></a>
+                            <p>La ciudad de La Plata es reconocida por su rica arquitectura y su amplia gama de espacios verdes, entre los cuales se destaca una de las veinticuatro plazas y parques distribuidos estratégicamente en el casco urbano. La Plaza "19 de Noviembre" es, sin duda, un espacio verde de gran valor paisajístico en la historia de esta gran ciudad.</p>
+                    </section>
+
+                    <div class="index-comunidad">
+
+                        <section class="index-section"> <!-- COMUNIDAD -->
+                            <a class="link-negro" href="./pages/ejemplo.html">
+                                <img class="index-fotito" src="./assets/img/comunidades/regatas.jpg" alt="Comunidad destacada">
+                            </a>
+                            <div class="index-textito">
+                                <a class="link-negro" href="./pages/ejemplo.html"><h3>Club de Regatas La Plata - 120 años de historia</h3></a>
+                                <p>Luego de la fundación de la ciudad de La Plata en el año 1882 y después de construido el puerto de Ensenada (llamado Puerto La Plata) el Delta del Río Santiago fue el escenario ideal para lugareños e inmigrantes porteños y sus paseos dominicales en búsqueda tanto de naturaleza como de la belleza exótica que proponían la selva marginal y sus arroyos que reemplazan al tradicional paseo del Bosque.</p>
+                            </div>
+                        </section>
+
+                        <section class="index-section"> <!-- COMUNIDAD -->
+                            <a class="link-negro" href="./pages/ejemplo.html">
+                                <img class="index-fotito" src="./assets/img/comunidades/domo.jpg" alt="Comunidad destacada">
+                            </a>
+                            <div class="index-textito">
+                                <a class="link-negro" href="./pages/ejemplo.html"><h3>Domo en Bosquesitos, una experiencia extraordinaria en la naturaleza</h3></a>
+                                <p>Este espacio arquitectónico extraordinario se encuentra ubicado en barrio Los Bosquecitos, a solo cinco minutos de Coronel Brandsen y a treinta minutos de La Plata, un lugar mágico que invita a sus huéspedes a vivir una experiencia realmente única dentro de la naturaleza.</p>
+                            </div>
+                        </section>
+
                     </div>
-                </section>
-                <section class="index-section"> <!-- COMUNIDAD -->
-                    <a class="link-negro" href="./pages/ejemplo.html">
-                        <img class="index-fotito" src="./assets/img/comunidades/domo.jpg" alt="Comunidad destacada">
-                    </a>
-                    <div class="index-textito">
-                        <a class="link-negro" href="./pages/ejemplo.html"><h3>Domo en Bosquesitos, una experiencia extraordinaria en la naturaleza</h3></a>
-                        <p>Este espacio arquitectónico extraordinario se encuentra ubicado en barrio Los Bosquecitos, a solo cinco minutos de Coronel Brandsen y a treinta minutos de La Plata, un lugar mágico que invita a sus huéspedes a vivir una experiencia realmente única dentro de la naturaleza.</p>
+
+                </div>
+
+                <div class="index-aside col-sm-12 col-md-4"> <!-- ASIDE CON ARTICULOS DEL BLOG -->
+
+                    <h2>Blog</h2>
+
+                    <div> 
+                        <a href="./pages/blog.html">
+                            <img class="foto-aside" src="./assets/img/blog/blog-cover.jpeg" alt="Imagen ilustrativa del articulo">
+                        </a>
+                        <a class="link-negro" href="./pages/blog.html"><h3>“Realidad virtual” y nuevos paradigmas</h3></a>
+                        <a class="link-negro" href="https://www.linkedin.com/in/jor-amoreo-casotti/" target="_blank"><p>por Jor Amoreo Casotti</p></a>
+                        <p>CEO & Founder - Proptech Pint</p>
                     </div>
-                </section>
+
+                    <div>
+                        <a href="./pages/blog.html">
+                            <img class="foto-aside" src="./assets/img/blog/abrete-sesamo.jpg" alt="Imagen ilustrativa del articulo">
+                        </a>
+                        <a class="link-negro" href="./pages/blog.html"><h3>Ábrete sésamo: ingreso a la cuarta revolución industrial</h3></a>
+                        <a class="link-negro" href="https://www.linkedin.com/in/jor-amoreo-casotti/" target="_blank"><p>por Gastón Figueras</p></a>
+                        <P>Lic. en Ciencias Políticas y Relaciones Internacionales</P>
+                    </div>
+
+                    <div>
+                        <a href="./pages/blog.html">
+                            <img class="foto-aside" src="./assets/img/blog/color-exito.jpeg" alt="Imagen ilustrativa del articulo">
+                        </a>
+                        <a class="link-negro" href="./pages/blog.html"><h3>El Color del Éxito</h3></a>
+                        <a class="link-negro" href="https://www.linkedin.com/in/jor-amoreo-casotti/" target="_blank"><p>por Daniel Alejandro Briceño Moreno</p></a>
+                        <p>Lic. en Ciencias Economicas</p>
+                    </div>
+                </div>
             </div>
+
         </main>
 
-        <aside class="index-aside"> <!-- ASIDE CON ARTICULOS DEL BLOG -->
+        <article class="container">
+            <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h4>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusamus ipsam dolor ipsa totam natus iste commodi pariatur consectetur, itaque assumenda, culpa veniam consequatur saepe repudiandae! Omnis odit soluta rem laboriosam.</p>
+        </article>
 
-            <h2>Blog</h2>
-
-            <div> 
-                <a href="./pages/blog.html">
-                    <img class="foto-aside" src="./assets/img/blog/blog-cover.jpeg" alt="Imagen ilustrativa del articulo">
-                </a>
-                <a class="link-negro" href="./pages/blog.html"><h3>“Realidad virtual” y nuevos paradigmas</h3></a>
-                <a class="link-negro" href="https://www.linkedin.com/in/jor-amoreo-casotti/" target="_blank"><p>por Jor Amoreo Casotti</p></a>
-                <p>CEO & Founder - Proptech Pint</p>
-            </div>
-
-            <div class="linea"></div>
-
-            <div>
-                <a href="./pages/blog.html">
-                    <img class="foto-aside" src="./assets/img/blog/abrete-sesamo.jpg" alt="Imagen ilustrativa del articulo">
-                </a>
-                <a class="link-negro" href="./pages/blog.html"><h3>Ábrete sésamo: ingreso a la cuarta revolución industrial</h3></a>
-                <a class="link-negro" href="https://www.linkedin.com/in/jor-amoreo-casotti/" target="_blank"><p>por Gastón Figueras</p></a>
-                <P>Lic. en Ciencias Políticas y Relaciones Internacionales</P>
-            </div>
-
-            <div class="linea"></div>
-
-            <div>
-                <a href="./pages/blog.html">
-                    <img class="foto-aside" src="./assets/img/blog/color-exito.jpeg" alt="Imagen ilustrativa del articulo">
-                </a>
-                <a class="link-negro" href="./pages/blog.html"><h3>El Color del Éxito</h3></a>
-                <a class="link-negro" href="https://www.linkedin.com/in/jor-amoreo-casotti/" target="_blank"><p>por Daniel Alejandro Briceño Moreno</p></a>
-                <p>Lic. en Ciencias Economicas</p>
-            </div>
-        </aside>
-
-        <div class="banner-publicidad"> <!-- PUBLICIDAD -->          
+        <aside class="banner-publicidad"> <!-- PUBLICIDAD -->          
             <a target="_blank" href="https://pint.com.ar/"><img src="./assets/img/publicaciones-inteligentes.jpg" alt="Publicidad"></a>
-        </div>
+        </aside>
 
         <div> <!-- WHATSAPP -->
             <a class="boton-wp" href="https://api.whatsapp.com/send?phone=5492213562858" target="_blank">
@@ -112,7 +125,7 @@
             </a>
         </div>
 
-        <footer> <!-- DERECHOS, LEGALES, CONTACTO -->
+        <footer class="container-fluid"> <!-- DERECHOS, LEGALES, CONTACTO -->
             <h4>pint.com.ar</h4>
             <p>web pint &copy; todos los derechos reservados</p>
             <p>redes sociales </p>
