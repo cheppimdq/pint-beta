@@ -138,15 +138,6 @@ a { /* ANCLAS */
     border-radius: 50%;
 }
 
-.blog-bajada {
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-    align-content: space-evenly;
-}
-
 .blogsito {
     background-color: whitesmoke;
     display: flex;
