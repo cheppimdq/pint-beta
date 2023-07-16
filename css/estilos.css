@@ -9,13 +9,13 @@
 }
 
 body {
-    font-family: 'Nunito', sans-serif;
+    font-family: 'Comfortaa', cursive;
     color: #212121;
     overflow-x: hidden;
 }
 
 h1, h2, h3, h4, h5, h6 { 
-    font-family: 'Comfortaa', cursive;
+    font-family: 'Nunito', sans-serif;
     font-weight: bold;
 }
 
@@ -83,6 +83,10 @@ a { /* ANCLAS */
     color: #212121;
 }
 
+.link-gris {
+    color: #9b9b9b;
+}
+
 .video-header { /* VIDEO HEADER */
     position: absolute;
     top: 0;
@@ -90,8 +94,6 @@ a { /* ANCLAS */
     width: 100%;
     height: 100%;
     object-fit: cover;
-    display: block;
-    z-index: 5;
 }
 
 /* INDEX */
@@ -276,11 +278,10 @@ a { /* ANCLAS */
 /* FOOTER */
 
 footer {
-    display: block;
+    position: relative;
     height: 33vh;
-    padding: 1%;
     background-color: #212121;
-    color: #FAFAFA;
+    color: #9b9b9b;
     z-index: 10;
 }
 
