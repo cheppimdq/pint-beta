@@ -224,9 +224,6 @@ a { /* ANCLAS */
     color: #0077B5;   
 }
 
-
-
-
 /* CONTACTO */
 
 .footer-maps {
@@ -272,7 +269,7 @@ a { /* ANCLAS */
 
 /* FOOTER */
 
-footer {
+.footer-oscuro {
     position: relative;
     height: 33vh;
     background-color: #212121;
