@@ -25,6 +25,48 @@ p {
 
 /* HEADER */
 
+.logo { /* LOGO */
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.link-blanco {
+    color: #FAFAFA;
+}
+
+.link-negro {
+    color: #212121;
+}
+
+.link-gris {
+    color: #9b9b9b;
+}
+
+.video-header { /* VIDEO HEADER - NO TOCAR */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.header-oscuro {
+    background-color: #212121;
+}
+
+.navbar .navbar-nav .nav-link.active {
+    color: #9b9b9b ;
+}
+
+.navbar .navbar-nav .nav-link:hover {
+    color:#757575;
+}
+
+
+
+
 .header-fix {
     display: block; /*DISPLAY EN BLOQUE - CONTENEDOR - WIDTH=100% */
     position: sticky;
@@ -59,10 +101,6 @@ p {
     align-items: center;
 }
 
-.logo { /* LOGO */
-    width: 200px;
-}
-
 ul {
     list-style: none;
 }
@@ -75,26 +113,6 @@ a { /* ANCLAS */
     text-decoration: none;
 }
 
-.link-blanco {
-    color: #FAFAFA;
-}
-
-.link-negro {
-    color: #212121;
-}
-
-.link-gris {
-    color: #9b9b9b;
-}
-
-.video-header { /* VIDEO HEADER - NO TOCAR */
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
 
 /* INDEX */
 
@@ -206,16 +224,10 @@ a { /* ANCLAS */
     color: #0077B5;   
 }
 
-/* CONTACTO */
 
-.contacto-header {
-    height: 66vh;
-    background-image: url(../assets/img/contacto/contacto-header.jpg);
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
+
+
+/* CONTACTO */
 
 .contacto-main {
     height: 33vh;
@@ -285,6 +297,33 @@ footer {
     z-index: 10;
 }
 
+@media screen and (max-width: 768px) {
+    .link-blanco {
+        flex-direction: column;
+        font-size: 0.9rem;
+    }
+
+    .link-negro {
+        flex-direction: column;
+        font-size: 0.9rem;
+    }
+
+    .link-gris {
+        flex-direction: column;
+        font-size: 0.9rem;
+    }
+    
+}
+
+/*
+.parallax {
+    height: 66vh;
+    background-image: url(../assets/img/contacto/contacto-header.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+} */
 
 /* .·.
 1920px
