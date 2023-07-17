@@ -14,26 +14,6 @@
     <body> <!-- HEADER + NAV + MAIN + SECTION + FOOTER -->
 
         <header class="container-fluid header-oscuro">
-
-            <!-- <div class="row"> BARRA DE NAVEGACION - ESTA BARRA VA A SER FIX PERO COMO TENGO PROBLEMAS LA DEJE ASI POR AHORA
-                
-                <div class="col-sm-12 col-md-2">
-                    <a href="../index.html"><img class="logo" src="../assets/img/marca/logo-2.png" alt="Logo"></a>
-                </div>
-
-                <nav class="col-sm-12 col-md-10 nav d-flex justify-content-start align-items-center">
-                    <ul class="d-flex justify-content-center align-items-center">
-                        <li><a class="link-negro" aria-current="page" href="https://www.pint.com.ar/" target="_blank">pint.com.ar</a></li>
-                        <li><a class="link-negro" href="../index.html">inicio</a></li>
-                        <li><a class="link-negro" href="../pages/blog.html">blog</a></li>
-                        <li><a class="link-negro" href="../pages/comunidades.html">comunidades</a></li>
-                        <li><a class="link-negro" href="../pages/empresa.html">empresa</a></li>
-                        <li><a class="link-negro" href="#">contacto</a></li>
-                    </ul>
-                </nav>
-
-            </div>  -->
-
             <nav class="navbar navbar-expand-lg">
                 <div class="container">
                     <a class="navbar-brand col-sm-12 col-md-2" href="#">
@@ -63,35 +43,39 @@
                     </div>
                 </div>
             </nav>
-
         </header>
-        
-        <main class="contacto-main"> <!-- FORMULARIO DE CONTACTO -->
-            <h1>Contacto</h1>
-            <p>Para más información sobre nuestros servicios, déjenos un mensaje y un representante se pondrá en contacto con usted.</p>
-                <form action="./404.html">
-                    <div class="contacto-tabla">
-                        <input type="text" placeholder="nombre" required="">
-                    </div>
-                    <div class="contacto-tabla">
-                        <input type="email" placeholder="email" required="">
-                    </div>
-                    <div class="contacto-tabla">
-                        <textarea placeholder="mensaje" required=""></textarea>
-                    </div>
-                    <div>
-                        <input type="reset" value="Borrar"> <!-- SE PUEDE BORRAR? -->
-                        <input type="submit" value="Enviar">
-                    </div>
-                </form>
-        </main>
 
-        <article class="contacto-ficha">
-            <img class="contacto-iso" src="../assets/img/marca/comar-1.png" alt="">
-            <h2>Acercate e inspirate</h2>
-            <a class="link-negro" href="https://api.whatsapp.com/send?phone=5492213562858"><p>+54 9 221 356-2858</p></a>
-            <a class="link-negro" href="mailto:contacto@pint.com.ar"><p>contacto@pint.com.ar</p></a>
-        </article>
+        <main class="container"> <!-- FORMULARIO DE CONTACTO -->
+
+            <div class="row">
+                <div class="col-sm-12 col-md-6 py-3 my-4">
+                    <h1>Contacto</h1>
+                    <p>Para más información sobre nuestros servicios, déjenos un mensaje y un representante se pondrá en contacto con usted.</p>
+                    <form action="./404.html">
+                        <div>
+                            <input type="text" placeholder="nombre" required="">
+                        </div>
+                        <div>
+                            <input type="email" placeholder="email" required="">
+                        </div>
+                        <div>
+                            <textarea placeholder="mensaje" required=""></textarea>
+                        </div>
+                        <div>
+                            <input type="reset" value="Borrar"> <!-- SE PUEDE BORRAR? -->
+                            <input type="submit" value="Enviar">
+                        </div>
+                    </form>
+                </div>
+                
+                <div class="col-sm-12 col-md-6 text-center py-3 my-4">
+                    <h2>acercate e inspirate</h2>
+                    <a class="link-negro" href="https://api.whatsapp.com/send?phone=5492213562858"><p>+54 9 221 356-2858</p></a>
+                    <a class="link-negro" href="mailto:contacto@pint.com.ar"><p>contacto@pint.com.ar</p></a>
+                </div>
+            </div>
+            
+        </main>        
 
         <div> <!-- WHATSAPP -->
             <a class="boton-wp" href="https://api.whatsapp.com/send?phone=5492213562858" target="_blank">
@@ -99,8 +83,9 @@
             </a>
         </div>
 
-        <!-- MAPA | CONFIGURAR BIEN EL CSS -->
-        <iframe class="footer-maps" src="https://www.google.com/maps/embed?pb=!1m13!1m8!1m3!1d6546.515372992841!2d-58.023869!3d-34.874875!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMzTCsDUyJzI5LjYiUyA1OMKwMDEnMjUuOSJX!5e0!3m2!1ses!2sus!4v1686799133071!5m2!1ses!2sus" loading="lazy"></iframe>
+        <aside class="container-fluid"> <!-- MAPA | CONFIGURAR BIEN EL CSS -->
+            <iframe class="footer-maps" src="https://www.google.com/maps/embed?pb=!1m13!1m8!1m3!1d6546.515372992841!2d-58.023869!3d-34.874875!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMzTCsDUyJzI5LjYiUyA1OMKwMDEnMjUuOSJX!5e0!3m2!1ses!2sus!4v1686799133071!5m2!1ses!2sus" loading="lazy"></iframe>
+        </aside>
 
         <footer class="container-fluid"> <!-- DERECHOS, LEGALES, CONTACTO -->
             <div class="row">

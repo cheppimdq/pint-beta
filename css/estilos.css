@@ -229,31 +229,14 @@ a { /* ANCLAS */
 
 /* CONTACTO */
 
-.contacto-main {
-    height: 33vh;
-    width: 57%;
-    display: inline-block;
-}
-
-.contacto-tabla {
-    width: 100%;
-    display: inline-block;
-}
-
-.contacto-ficha {
-    width: 37%;
-    display: inline-block;
-}
-
-.contacto-iso {
-    height: 20vh;
-    display: inline-block;
-}
-
 .footer-maps {
     height: 66vh;
     width: 100%;
-    border: none;
+    object-fit: cover;
+}
+
+.contacto-foto {
+    height: 33vh;
 }
 
 /* EJEMPLO */
