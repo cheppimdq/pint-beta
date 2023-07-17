@@ -27,7 +27,7 @@ p {
 
 .header-sticky {
     height: 100vh;
-    z-index: 1020;
+    z-index: 10;
 }
 
 .header-oscuro {
@@ -225,17 +225,18 @@ a { /* ANCLAS */
     right: 6vh;
     color: #128C7E;
     font-size: 3.5rem;
-    z-index: 0; /* deberia quedar debajo del footer */
 }
 
 /* FOOTER */
 
 .footer-oscuro {
-    position: relative;
     height: 33vh;
-    background-color: #212121;
     color: #9b9b9b;
     z-index: 1020;
+}
+
+.fondo-negro {
+    background-color: #212121;
 }
 
 @media screen and (max-width: 768px) {
