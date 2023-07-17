@@ -13,21 +13,38 @@
 
     <body> <!-- HEADER + NAV + MAIN + SECTION + FOOTER -->
 
-        <header class="container-fluid index-header">
-            <div class="nav-stick">  <!-- BARRA DE NAVEGACION -->
-                <a href="../index.html"><img class="logo" src="../assets/img/marca/logo-3.png" alt="Logo"></a> <!-- LOGO | CAMBIAR COMO ESCALAR IMG -->
-                <nav>
-                    <ul>
-                        <li><a class="link-blanco" aria-current="page" href="https://www.pint.com.ar/" target="_blank">pint.com.ar</a></li>
-                        <li><a class="link-blanco" href="../index.html">inicio</a></li>
-                        <li><a class="link-blanco" href="../pages/blog.html">blog</a></li>
-                        <li><a class="link-blanco" href="../pages/comunidades.html">comunidades</a></li>
-                        <li><a class="link-blanco" href="#">empresa</a></li>
-                        <li><a class="link-blanco" href="../pages/contacto.html">contacto</a></li>
-                    </ul>
-                </nav>
-            </div>
+        <header class="container-fluid header-sticky">
+            <nav class="navbar navbar-expand-lg sticky-top">
+                <div class="container">
+                    <a class="navbar-brand col-sm-12 col-md-2" href="./index.html">
+                        <img class="logo" src="../assets/img/marca/logo-3.png" alt="Logo Web Pint" width="30" height="24">
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> <!-- MENU -->
+                    <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link link-blanco" href="../index.html">inicio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link link-blanco" href="../pages/blog.html">blog</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link link-blanco" href="../pages/comunidades.html">comunidades</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">empresa</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link link-blanco" href="../pages/contacto.html">contacto</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
             <video class="video-header" autoplay muted loop src="../assets/video/video-head2.mp4"></video> <!-- VIDEO DE FONDO -->
+
         </header>
 
         <main>

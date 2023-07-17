@@ -25,10 +25,27 @@ p {
 
 /* HEADER */
 
+.header-sticky {
+    height: 100vh;
+    z-index: 1020;
+}
+
+.header-oscuro {
+    background-color: #212121;
+}
+
 .logo { /* LOGO */
     width: 100%;
     height: 100%;
     object-fit: cover;
+}
+
+.navbar .navbar-nav .nav-link.active {
+    color: #9b9b9b ;
+}
+
+.navbar .navbar-nav .nav-link:hover {
+    color:#757575;
 }
 
 .link-blanco {
@@ -52,55 +69,6 @@ p {
     object-fit: cover;
 }
 
-.header-oscuro {
-    background-color: #212121;
-}
-
-.navbar .navbar-nav .nav-link.active {
-    color: #9b9b9b ;
-}
-
-.navbar .navbar-nav .nav-link:hover {
-    color:#757575;
-}
-
-
-
-
-.header-fix {
-    display: block; /*DISPLAY EN BLOQUE - CONTENEDOR - WIDTH=100% */
-    position: sticky;
-    top: 0;
-    z-index: 10;
-}
-
-.nav-fix { /* BARRA DE NAVEGACION */
-    width: 100%;
-    height: 21vh;
-    background-color: #FAFAFA;
-    display: flex; /* LOS HIJOS PASAN A SER FLEXIBLES HABILITA TODAS ESTAS PROP */
-    flex-direction: row; /* FILAS */
-    align-items: center;
-    justify-content: flex-start; /* VALOR POR DEFECTO */
-    flex-wrap: nowrap; /* WRAP VA PARA GALERIA */
-    align-items: center;
-}
-
-.nav-stick { /* BARRA DE NAVEGACION */
-    width: 100%;
-    height: 21vh;
-    position: sticky;
-    top: 0;
-    z-index: 10;
-    overflow: hidden;
-    display: flex; /* LOS HIJOS PASAN A SER FLEXIBLES */
-    flex-direction: row;
-    align-items: center;
-    justify-content: flex-start; /* ALINEA EN EL EJE PRINCIPAL DEL CONTENEDOR */
-    flex-wrap: nowrap;
-    align-items: center;
-}
-
 ul {
     list-style: none;
 }
@@ -115,13 +83,6 @@ a { /* ANCLAS */
 
 
 /* INDEX */
-
-.index-header {
-    position: relative;
-    height: 100vh;
-    top: 0;
-    z-index: 10;
-}
 
 .index-comunidad { /* NO TOCAR - FUNCIONA BIEN */
     display: flex;
@@ -274,7 +235,7 @@ a { /* ANCLAS */
     height: 33vh;
     background-color: #212121;
     color: #9b9b9b;
-    z-index: 10;
+    z-index: 1020;
 }
 
 @media screen and (max-width: 768px) {
@@ -294,19 +255,3 @@ a { /* ANCLAS */
     }
     
 }
-
-/*
-.parallax {
-    height: 66vh;
-    background-image: url(../assets/img/contacto/contacto-header.jpg);
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-} */
-
-/* .·.
-1920px
-600px
-780px
-1024 */
