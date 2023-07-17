@@ -25,9 +25,17 @@ p {
 
 /* HEADER */
 
+.video-header { /* VIDEO HEADER - NO TOCAR */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
 .header-sticky {
     height: 100vh;
-    z-index: 10;
 }
 
 .header-oscuro {
@@ -60,15 +68,6 @@ p {
     color: #9b9b9b;
 }
 
-.video-header { /* VIDEO HEADER - NO TOCAR */
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
 ul {
     list-style: none;
 }
@@ -80,7 +79,6 @@ li {
 a { /* ANCLAS */
     text-decoration: none;
 }
-
 
 /* INDEX */
 
@@ -114,8 +112,6 @@ a { /* ANCLAS */
 }
 
 .blog-fotito {
-    width: 70px;
-    height: auto;
     border-radius: 50%;
 }
 
@@ -163,25 +159,13 @@ a { /* ANCLAS */
 
 /* EMPRESA */
 
-.empresa-marca {
-    width: 25%;
-}
-
-.empresa-columnas {
-    display: inline-block;
-}
-
-.empresa-persona {
-    display: inline-block;
-}
-
 .empresa-perfil {
-    width: 225px;
     border-radius: 50%;
+    max-height: 66%;
 }
 
 .boton-in {
-    font-size: 1.5rem;
+    font-size: 2rem;
     color: #0077B5;   
 }
 
@@ -219,12 +203,30 @@ a { /* ANCLAS */
     height: 21vh;
 }
 
-.boton-wp { /* WHATSAPP */
+/* WP FIJO */
+.boton-wp {
     position: fixed;
-    bottom: 6vh;
-    right: 6vh;
+    bottom: 5vh;
+    right: 5vh;
+    background-color: #128C7E;
+    color: #FAFAFA;
+    border-radius: 50%;
+    padding: 0.9%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+}
+
+.boton-wp:hover {
+    background-color: #FAFAFA;
     color: #128C7E;
-    font-size: 3.5rem;
+}
+
+.boton-wp i {
+    display: block;
+}
+
+.boton-wp i.fa-whatsapp {
+    font-size: 2rem;
 }
 
 /* FOOTER */
@@ -232,11 +234,11 @@ a { /* ANCLAS */
 .footer-oscuro {
     height: 33vh;
     color: #9b9b9b;
-    z-index: 1020;
 }
 
 .fondo-negro {
     background-color: #212121;
+    z-index: 1020;
 }
 
 @media screen and (max-width: 768px) {
