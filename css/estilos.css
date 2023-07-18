@@ -52,9 +52,6 @@ p {
     z-index: 1020;
 }
 
-.header-oscuro {
-}
-
 .logo { /* LOGO */
     width: 100%;
     height: 100%;
@@ -108,9 +105,6 @@ a { /* ANCLAS */
 
 /* BLOG */
 
-.blog-fecha {
-    color: #757575;
-}
 
 .blog-firma {
     background-color: whitesmoke;
@@ -118,6 +112,8 @@ a { /* ANCLAS */
 
 .blog-fotito {
     width: 100%;
+    height: 100%;
+    object-fit: cover;
     border-radius: 50%;
 }
 
@@ -203,6 +199,10 @@ a { /* ANCLAS */
 @media (max-width: 767px) {
 
     .video-header {
+        display: none;
+    }
+
+    .blog-fotito {
         display: none;
     }
 
