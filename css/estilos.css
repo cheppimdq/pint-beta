@@ -39,6 +39,12 @@ p {
     background-color: #212121;
 }
 
+.nav-sticky {
+    position: sticky;
+    top: 0;
+    z-index: 1020;
+}
+
 .header-oscuro {
     background-color: #212121;
 }
@@ -106,6 +112,11 @@ a { /* ANCLAS */
 
 .blog-fotito {
     border-radius: 50%;
+}
+
+.fondo-negro {
+    background-color: #212121;
+    z-index: 1020;
 }
 
 .fondo-gris {
@@ -180,22 +191,46 @@ a { /* ANCLAS */
     color: #9b9b9b;
 }
 
-.fondo-negro {
-    background-color: #212121;
-    z-index: 1020;
+/* MEDIA */
+
+@media (min-width: 768px) {
+    .video-header {
+        display: block;
+    }
 }
 
-@media screen and (max-width: 768px) {
-    .link-blanco {
-        flex-direction: column;
-        font-size: 0.9rem;
+@media (max-width: 767px) {
+
+    .video-header {
+        display: none;
     }
 
-    .link-negro {
-        flex-direction: column;
-        font-size: 0.9rem;
+    .nav-sticky {
+        position: static;
     }
 
+    .navbar-nav {
+        align-items: center;
+    }
+
+    .navbar-toggler {
+        display: block;
+        margin: 0 auto;
+        background-color: #212121;
+        border: none;
+    }
+
+    .navbar-toggler-icon {
+        background-color: #FAFAFA;
+    }
+
+    .navbar-toggler .navbar-toggler-icon {
+        width: 1.5em;
+        height: 1.5em;
+    }
+
+    .link-blanco,
+    .link-negro,
     .link-gris {
         flex-direction: column;
         font-size: 0.9rem;
