@@ -45,35 +45,38 @@
             </nav>
         </header>
 
-        <main class="container"> <!-- FORMULARIO DE CONTACTO -->
+        <main class="container">
             <div class="row">
                 <div class="col-sm-12 col-md-6 py-3 my-4">
                     <h1>Contacto</h1>
                     <p>Para más información sobre nuestros servicios, déjenos un mensaje y un representante se pondrá en contacto con usted.</p>
                     <form action="./404.html">
-                        <div>
-                            <input type="text" placeholder="nombre" required="">
+                        <div class="mb-3">
+                            <input type="text" class="form-control" placeholder="Nombre" required>
                         </div>
-                        <div>
-                            <input type="email" placeholder="email" required="">
+                        <div class="mb-3">
+                            <input type="email" class="form-control" placeholder="Email" required>
                         </div>
-                        <div>
-                            <textarea placeholder="mensaje" required=""></textarea>
+                        <div class="mb-3">
+                            <textarea class="form-control" placeholder="Mensaje" required></textarea>
                         </div>
-                        <div>
-                            <input type="reset" value="Borrar"> <!-- SE PUEDE BORRAR? -->
-                            <input type="submit" value="Enviar">
+                        <div class="d-grid gap-2">
+                            <input type="reset" class="btn btn-secondary" value="Borrar"> <!-- SE PUEDE BORRAR? -->
+                            <input type="submit" class="btn btn-dark" value="Enviar">
                         </div>
                     </form>
                 </div>
-                
                 <div class="col-sm-12 col-md-6 text-center py-3 my-4">
-                    <h2>acercate e inspirate</h2>
-                    <a class="link-negro" href="https://api.whatsapp.com/send?phone=5492213562858"><p>+54 9 221 356-2858</p></a>
-                    <a class="link-negro" href="mailto:contacto@pint.com.ar"><p>contacto@pint.com.ar</p></a>
+                    <h2>Acércate e inspirate</h2>
+                    <a class="link-negro" href="https://api.whatsapp.com/send?phone=5492213562858">
+                        <p>+54 9 221 356-2858</p>
+                    </a>
+                    <a class="link-negro" href="mailto:contacto@pint.com.ar">
+                        <p>contacto@pint.com.ar</p>
+                    </a>
                 </div>
             </div>
-        </main>        
+        </main>
 
         <div class="container"> <!-- WHATSAPP -->
             <a class="boton-wp" href="https://api.whatsapp.com/send?phone=5492213562858" target="_blank">
