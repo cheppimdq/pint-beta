@@ -34,9 +34,16 @@ p {
     object-fit: cover;
 }
 
-.header-sticky {
+.header-index {
     height: 100vh;
     background-color: #212121;
+}
+
+.header-sticky {
+    background-color: #212121;
+    position: sticky;
+    top: 0;
+    z-index: 1020;
 }
 
 .nav-sticky {
@@ -46,7 +53,6 @@ p {
 }
 
 .header-oscuro {
-    background-color: #212121;
 }
 
 .logo { /* LOGO */
@@ -193,19 +199,21 @@ a { /* ANCLAS */
 
 /* MEDIA */
 
-@media (min-width: 768px) {
-    .video-header {
-        display: block;
-    }
-}
-
 @media (max-width: 767px) {
 
     .video-header {
         display: none;
     }
 
+    .header-index {
+        height: auto;
+    }
+
     .nav-sticky {
+        position: static;
+    }
+
+    .header-sticky {
         position: static;
     }
 
@@ -216,12 +224,12 @@ a { /* ANCLAS */
     .navbar-toggler {
         display: block;
         margin: 0 auto;
-        background-color: #212121;
         border: none;
+        outline: none;
     }
 
-    .navbar-toggler-icon {
-        background-color: #FAFAFA;
+    .icono-head {
+        color: #FAFAFA;
     }
 
     .navbar-toggler .navbar-toggler-icon {
@@ -234,5 +242,32 @@ a { /* ANCLAS */
     .link-gris {
         flex-direction: column;
         font-size: 0.9rem;
+    }
+
+    .navbar-collapse {
+        background-color: #212121;
+        padding: 10px;
+    }
+
+    .navbar-nav {
+        flex-direction: column;
+    }
+
+    .nav-item {
+        margin: 5px 0;
+    }
+
+    .nav-link {
+        color: #FAFAFA;
+    }
+
+    .nav-link:hover {
+        color: #9b9b9b;
+    }
+}
+
+@media (min-width: 768px) {
+    .video-header {
+        display: block;
     }
 }
