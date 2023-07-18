@@ -173,7 +173,7 @@ a { /* ANCLAS */
     background-color: #128C7E;
     color: #FAFAFA;
     border-radius: 50%;
-    padding: 0.9%;
+    padding: 2vh;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: background-color 0.3s ease;
 }
@@ -188,7 +188,7 @@ a { /* ANCLAS */
 }
 
 .boton-wp i.fa-whatsapp {
-    font-size: 2rem;
+    font-size: 2em;
 }
 
 /* FOOTER */
