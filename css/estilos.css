@@ -36,6 +36,7 @@ p {
 
 .header-sticky {
     height: 100vh;
+    background-color: #212121;
 }
 
 .header-oscuro {
@@ -109,12 +110,6 @@ a { /* ANCLAS */
 
 .blogsito {
     background-color: whitesmoke;
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-    align-content: space-evenly;
 }
 
 /* COMUNIDADES */
@@ -208,13 +203,4 @@ a { /* ANCLAS */
         flex-direction: column;
         font-size: 0.9rem;
     }
-
-    .video-header { /* VIDEO HEADER - NO TOCAR */
-        height: auto;
-    }
-    
-    .header-sticky {
-        height: auto;
-    }
-    
 }
