@@ -1,8 +1,7 @@
-/** COMFORTAA + NUNITO */
 @import url("https://fonts.googleapis.com/css2?family=Comfortaa&family=Nunito&display=swap");
-* { /* RESET */
-  margin: 0; /* margen cajita */
-  padding: 0; /* margen contenido */
+* {
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
 }
 
@@ -17,11 +16,26 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: bold;
 }
 
-p {
-  font-size: 1rem;
+/* ACA VA TODO LO QUE NO QUEDO ANIDADO */
+.fondo-negro {
+  background-color: #212121;
+  z-index: 1020;
 }
 
-/* HEADER */
+.fondo-gris {
+  background-color: whitesmoke;
+}
+
+.header-index {
+  height: 100vh;
+  background-color: #212121;
+}
+.header-index .logo { /* LOGO */
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
 .video-header { /* VIDEO HEADER - NO TOCAR */
   position: absolute;
   top: 0;
@@ -31,11 +45,42 @@ p {
   object-fit: cover;
 }
 
-.header-index {
-  height: 100vh;
-  background-color: #212121;
+.boton-wp {
+  position: fixed;
+  bottom: 5vh;
+  right: 5vh;
+  background-color: #128C7E;
+  color: #FAFAFA;
+  border-radius: 50%;
+  padding: 2vh;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease;
+}
+.boton-wp i {
+  display: block;
+  font-size: 2em;
+}
+.boton-wp:hover {
+  background-color: #FAFAFA;
+  color: #128C7E;
 }
 
+.footer-oscuro {
+  height: 33vh;
+  color: #9b9b9b;
+}
+
+.footer-maps {
+  height: 66vh;
+  width: 100%;
+  object-fit: cover;
+}
+
+.contacto-foto {
+  height: 33vh;
+}
+
+/* HEADER */
 .header-sticky {
   background-color: #212121;
   position: sticky;
@@ -47,12 +92,6 @@ p {
   position: sticky;
   top: 0;
   z-index: 1020;
-}
-
-.logo { /* LOGO */
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
 }
 
 .navbar .navbar-nav .nav-link.active {
@@ -111,15 +150,6 @@ a { /* ANCLAS */
   border-radius: 50%;
 }
 
-.fondo-negro {
-  background-color: #212121;
-  z-index: 1020;
-}
-
-.fondo-gris {
-  background-color: whitesmoke;
-}
-
 /* EMPRESA */
 .empresa-perfil {
   border-radius: 50%;
@@ -132,16 +162,6 @@ a { /* ANCLAS */
 }
 
 /* CONTACTO */
-.footer-maps {
-  height: 66vh;
-  width: 100%;
-  object-fit: cover;
-}
-
-.contacto-foto {
-  height: 33vh;
-}
-
 /* PUBLICIDAD */
 .banner-publicidad {
   width: 100%;
@@ -151,38 +171,6 @@ a { /* ANCLAS */
 
 .blog-publicidad {
   height: 21vh;
-}
-
-/* WP FIJO */
-.boton-wp {
-  position: fixed;
-  bottom: 5vh;
-  right: 5vh;
-  background-color: #128C7E;
-  color: #FAFAFA;
-  border-radius: 50%;
-  padding: 2vh;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  transition: background-color 0.3s ease;
-}
-
-.boton-wp:hover {
-  background-color: #FAFAFA;
-  color: #128C7E;
-}
-
-.boton-wp i {
-  display: block;
-}
-
-.boton-wp i.fa-whatsapp {
-  font-size: 2em;
-}
-
-/* FOOTER */
-.footer-oscuro {
-  height: 33vh;
-  color: #9b9b9b;
 }
 
 /* MEDIA */
