@@ -1,9 +1,72 @@
 /* ACA VA TODO LO QUE NO QUEDO ANIDADO */
+
+.index-foto { /* CONFIGURACION GENERAL FOTOS */
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
 .fondo-negro {
     background-color: $negro-pint;
     z-index: 1020;
 }
 
 .fondo-gris {
+    background-color: whitesmoke; /* ARMAR TRES TIPOS DE GRIS!!! */
+}
+
+.boton-wp { /* WHATSAPP */
+    position: fixed;
+    bottom: 5vh;
+    right: 5vh;
+    background-color: #128C7E;
+    color: $blanco-pint;
+    border-radius: 50%;
+    padding: 2vh;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+    i {
+        display: block;
+        font-size: 2em;
+    }
+    &:hover {
+        background-color: $blanco-pint;
+        color: #128C7E;
+    }
+}
+
+.banner-publicidad { /* PUBLICIDAD GRANDE */
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.blog-publicidad { /* PUBLICIDAD CHICA */
+    height: 21vh;
+}
+
+.blog-firma { /* FIRMA BLOG */
     background-color: whitesmoke;
+    .blog-fotito {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 50%;
+    }
+}
+
+.empresa-perfil { /* FOTO PERFIL */
+    border-radius: 50%;
+    max-height: 66%;
+}
+
+.boton-in { /* BOTON LINKEDIN */
+    font-size: 2rem;
+    color: #0077B5;   
+}
+
+.footer-maps { /* MAPS FOOTER */
+    height: 66vh;
+    width: 100%;
+    object-fit: cover;
 }

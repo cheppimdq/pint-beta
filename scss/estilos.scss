@@ -1,116 +1,10 @@
 @import 'variables.scss';
 @import 'reset.scss';
 @import 'utilitarias.scss';
+@import 'header-mobile.scss';
 @import 'header-video.scss';
 @import 'header-pegajoso.scss';
-@import 'header-mobile.scss';
-@import 'main.scss';
-@import 'whatsapp.scss';
 @import 'footer.scss';
-@import 'contacto.scss';
-
-/* HEADER */
-
-.header-sticky {
-    background-color: $negro-pint;
-    position: sticky;
-    top: 0;
-    z-index: 1020;
-}
-
-.nav-sticky {
-    position: sticky;
-    top: 0;
-    z-index: 1020;
-}
-
-.navbar .navbar-nav .nav-link.active {
-    color: $gris-pint;
-}
-
-.navbar .navbar-nav .nav-link:hover {
-    color:#757575;
-}
-
-.link-blanco {
-    color: $blanco-pint;
-    border: none;
-}
-
-.link-negro {
-    color: $negro-pint;
-}
-
-.link-gris {
-    color: $gris-pint;
-}
-
-ul {
-    list-style: none;
-}
-
-li {
-    display: inline-block;
-}
-
-a { /* ANCLAS */
-    text-decoration: none;
-}
-
-/* INDEX */
-
-.index-foto {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.index-aside {
-    background-color: whitesmoke;
-}
-
-/* BLOG */
-
-.blog-firma {
-    background-color: whitesmoke;
-}
-
-.blog-fotito {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 50%;
-}
-
-
-/* EMPRESA */
-
-.empresa-perfil {
-    border-radius: 50%;
-    max-height: 66%;
-}
-
-.boton-in {
-    font-size: 2rem;
-    color: #0077B5;   
-}
-
-/* CONTACTO */
-
-
-
-/* PUBLICIDAD */
-.banner-publicidad {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.blog-publicidad {
-    height: 21vh;
-}
-
-/* MEDIA */
 
 @media (max-width: 767px) {
 
@@ -180,11 +74,5 @@ a { /* ANCLAS */
 
     .nav-link:hover {
         color: $gris-pint;
-    }
-}
-
-@media (min-width: 768px) {
-    .video-header {
-        display: block;
     }
 }
