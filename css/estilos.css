@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Comfortaa&family=Nunito&display=swap");
 * {
   margin: 0;
@@ -11,15 +12,9 @@ body {
   overflow-x: hidden;
 }
 
-h1, h2, h3, h4, h5, h6 {
-  font-family: "Nunito", sans-serif;
-  font-weight: bold;
-}
-
 /* ACA VA TODO LO QUE NO QUEDO ANIDADO */
 .link-blanco {
   color: #FAFAFA;
-  border: none;
 }
 
 .link-negro {
@@ -30,19 +25,162 @@ h1, h2, h3, h4, h5, h6 {
   color: #9b9b9b;
 }
 
+.fondo-gris {
+  background-color: whitesmoke; /* ARMAR TRES TIPOS DE GRIS!!! */
+}
+
 .index-foto { /* CONFIGURACION GENERAL FOTOS */
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
 
-.fondo-negro {
-  background-color: #212121;
-  z-index: 1020;
+.empresa-perfil { /* FOTO PERFIL */
+  border-radius: 50%;
+  max-height: 66%;
 }
 
-.fondo-gris {
-  background-color: whitesmoke; /* ARMAR TRES TIPOS DE GRIS!!! */
+.banner-publicidad { /* PUBLICIDAD GRANDE */
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.blog-publicidad { /* PUBLICIDAD CHICA */
+  height: 21vh;
+}
+
+.boton-in { /* BOTON LINKEDIN */
+  font-size: 2rem;
+  color: #0077B5;
+}
+
+.footer-maps { /* MAPS FOOTER */
+  height: 66vh;
+  width: 100%;
+  object-fit: cover;
+}
+
+.header-sticky { /* HEADER PEGAJOSO */
+  height: auto;
+  background-color: #212121;
+}
+@media screen and (min-width: 768px) {
+  .header-sticky {
+    position: sticky;
+    top: 0;
+    z-index: 1020;
+  }
+}
+
+.header-index { /* HEADER 100VH */
+  height: auto;
+  background-color: #212121;
+}
+@media screen and (min-width: 768px) {
+  .header-index {
+    height: 100vh;
+  }
+}
+
+.nav-sticky { /* NAVEGACION PEGAJOSA */
+  position: static;
+}
+@media screen and (min-width: 768px) {
+  .nav-sticky {
+    position: sticky;
+    top: 0;
+    z-index: 1020;
+  }
+}
+
+.navbar-toggler { /* BOTÓN */
+  display: block;
+  margin: 0 auto;
+  background-color: transparent; /* Agregamos un fondo transparente para el botón */
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+.navbar-toggler .icono-head {
+  fill: #FAFAFA;
+  color: #FAFAFA;
+  width: 1em;
+  height: 1em;
+}
+
+.navbar-collapse { /* LISTADO PAGINAS */ }
+.navbar-collapse ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.navbar-collapse ul li {
+  display: inline-block;
+}
+.navbar-collapse ul li a {
+  text-decoration: none;
+  color: #FAFAFA;
+}
+.navbar-collapse ul li a:hover {
+  color: #757575;
+}
+.navbar-collapse ul li a.active {
+  color: #757575;
+}
+.navbar-collapse ul li a.active:hover {
+  color: #9b9b9b;
+}
+
+.logo { /* LOGO */
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.video-header { /* VIDEO 100VH */
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  .video-header {
+    display: flex;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Nunito", sans-serif;
+  font-weight: bold;
+}
+
+a {
+  text-decoration: none;
+  color: #212121;
+}
+a:hover {
+  color: #9b9b9b;
+}
+
+.blog-firma { /* FIRMA BLOG */
+  background-color: #757575;
+}
+.blog-firma .blog-fotito {
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  .blog-firma .blog-fotito {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+  }
 }
 
 .boton-wp { /* WHATSAPP */
@@ -65,184 +203,11 @@ h1, h2, h3, h4, h5, h6 {
   color: #128C7E;
 }
 
-.banner-publicidad { /* PUBLICIDAD GRANDE */
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-.blog-publicidad { /* PUBLICIDAD CHICA */
-  height: 21vh;
-}
-
-.blog-firma { /* FIRMA BLOG */
-  background-color: whitesmoke;
-}
-.blog-firma .blog-fotito {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  border-radius: 50%;
-}
-
-.empresa-perfil { /* FOTO PERFIL */
-  border-radius: 50%;
-  max-height: 66%;
-}
-
-.boton-in { /* BOTON LINKEDIN */
-  font-size: 2rem;
-  color: #0077B5;
-}
-
-.footer-maps { /* MAPS FOOTER */
-  height: 66vh;
-  width: 100%;
-  object-fit: cover;
-}
-
-.header-index { /* HEADER VIDEO */
-  height: 100vh;
-  background-color: #212121;
-}
-.header-index .nav-sticky {
-  position: sticky;
-  top: 0;
-  z-index: 1020;
-}
-.header-index .nav-sticky .logo { /* LOGO */
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-.header-index .nav-sticky ul {
-  list-style: none;
-}
-.header-index .nav-sticky ul li {
-  display: inline-block;
-}
-.header-index .nav-sticky ul li a {
-  text-decoration: none;
-}
-.header-index .nav-sticky ul li a .nav-link.active {
-  color: #9b9b9b;
-}
-.header-index .nav-sticky ul li a .nav-link.active:hover {
-  color: #757575;
-}
-
-.video-header {
-  display: none;
-}
-@media screen and (min-width: 768px) {
-  .video-header {
-    display: block;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
-}
-
-.header-sticky {
-  background-color: #212121;
-  position: sticky;
-  top: 0;
-  z-index: 1020;
-}
-
-.navbar .navbar-nav .nav-link.active {
-  color: #9b9b9b;
-}
-
-.navbar .navbar-nav .nav-link:hover {
-  color: #757575;
-}
-
-.link-blanco {
-  color: #FAFAFA;
-  border: none;
-}
-
-.link-negro {
-  color: #212121;
-}
-
-.link-gris {
-  color: #9b9b9b;
-}
-
-ul {
-  list-style: none;
-}
-
-li {
-  display: inline-block;
-}
-
-a {
-  text-decoration: none;
-}
-
 .footer-oscuro {
   height: 33vh;
   color: #9b9b9b;
 }
-
-@media (max-width: 767px) {
-  .video-header {
-    display: none;
-  }
-  .blog-fotito {
-    display: none;
-  }
-  .header-index {
-    height: auto;
-  }
-  .nav-sticky {
-    position: static;
-  }
-  .header-sticky {
-    position: static;
-  }
-  .navbar-nav {
-    align-items: center;
-  }
-  .navbar-toggler {
-    display: block;
-    margin: 0 auto;
-    border: none;
-    outline: none;
-  }
-  .icono-head {
-    color: #FAFAFA;
-  }
-  .navbar-toggler .navbar-toggler-icon {
-    width: 1.5em;
-    height: 1.5em;
-  }
-  .link-blanco,
-  .link-negro,
-  .link-gris {
-    flex-direction: column;
-    font-size: 0.9rem;
-  }
-  .navbar-collapse {
-    background-color: #212121;
-    padding: 10px;
-  }
-  .navbar-nav {
-    flex-direction: column;
-  }
-  .nav-item {
-    margin: 5px 0;
-  }
-  .nav-link {
-    color: #FAFAFA;
-  }
-  .nav-link:hover {
-    color: #9b9b9b;
-  }
+.footer-oscuro .fondo-negro {
+  background-color: #212121;
+  z-index: 1020;
 }/*# sourceMappingURL=estilos.css.map */

@@ -1,0 +1,47 @@
+h1, h2, h3, h4, h5, h6 { 
+    font-family: $fuente-principal;
+    font-weight: bold;
+}
+
+a {
+    text-decoration: none;
+    color: $negro-pint;
+    &:hover {
+        color: $gris-pint;
+    }
+}
+
+.blog-firma { /* FIRMA BLOG */
+    background-color: $gris-link;
+    .blog-fotito {
+        display: none;
+        @media screen and (min-width: 768px) {
+            display: block;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 50%;
+        }
+    }
+}
+
+.boton-wp { /* WHATSAPP */
+    position: fixed;
+    bottom: 5vh;
+    right: 5vh;
+    background-color: #128C7E;
+    color: $blanco-pint;
+    border-radius: 50%;
+    padding: 2vh;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+    i {
+        display: block;
+        font-size: 2em;
+    }
+    &:hover {
+        background-color: $blanco-pint;
+        color: #128C7E;
+    }
+}
+

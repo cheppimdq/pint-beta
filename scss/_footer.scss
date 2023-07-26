@@ -1,4 +1,8 @@
 .footer-oscuro {
     height: 33vh;
     color: $gris-pint;
+    .fondo-negro {
+        background-color: $negro-pint;
+        z-index: 1020;
+    }
 }
