@@ -3,16 +3,8 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: bold;
 }
 
-a {
-    text-decoration: none;
-    color: $negro-pint;
-    &:hover {
-        color: $gris-pint;
-    }
-}
-
 .blog-firma { /* FIRMA BLOG */
-    background-color: $gris-link;
+    background-color: $gris-terciario;
     .blog-fotito {
         display: none;
         @media screen and (min-width: 768px) {
@@ -44,4 +36,3 @@ a {
         color: #128C7E;
     }
 }
-

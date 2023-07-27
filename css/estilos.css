@@ -14,19 +14,31 @@ body {
 
 /* ACA VA TODO LO QUE NO QUEDO ANIDADO */
 .link-blanco {
+  text-decoration: none;
+  color: #FAFAFA;
+}
+.link-blanco:hover {
   color: #FAFAFA;
 }
 
 .link-negro {
+  text-decoration: none;
+  color: #212121;
+}
+.link-negro:hover {
   color: #212121;
 }
 
 .link-gris {
-  color: #9b9b9b;
+  text-decoration: none;
+  color: #585858;
+}
+.link-gris:hover {
+  color: #585858;
 }
 
 .fondo-gris {
-  background-color: whitesmoke; /* ARMAR TRES TIPOS DE GRIS!!! */
+  background-color: #F4F4F4;
 }
 
 .index-foto { /* CONFIGURACION GENERAL FOTOS */
@@ -94,45 +106,6 @@ body {
   }
 }
 
-.navbar-toggler { /* BOTÓN */
-  display: block;
-  margin: 0 auto;
-  background-color: transparent; /* Agregamos un fondo transparente para el botón */
-  border: none;
-  outline: none;
-  cursor: pointer;
-}
-.navbar-toggler .icono-head {
-  fill: #FAFAFA;
-  color: #FAFAFA;
-  width: 1em;
-  height: 1em;
-}
-
-.navbar-collapse { /* LISTADO PAGINAS */ }
-.navbar-collapse ul {
-  list-style: none;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.navbar-collapse ul li {
-  display: inline-block;
-}
-.navbar-collapse ul li a {
-  text-decoration: none;
-  color: #FAFAFA;
-}
-.navbar-collapse ul li a:hover {
-  color: #757575;
-}
-.navbar-collapse ul li a.active {
-  color: #757575;
-}
-.navbar-collapse ul li a.active:hover {
-  color: #9b9b9b;
-}
-
 .logo { /* LOGO */
   width: 100%;
   height: 100%;
@@ -154,21 +127,57 @@ body {
   }
 }
 
+.navbar-toggler { /* BOTÓN */
+  display: block;
+  margin: 0 auto;
+  background-color: transparent; /* Agregamos un fondo transparente para el botón */
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+.navbar-toggler .icono-head {
+  fill: #FAFAFA;
+  color: #FAFAFA;
+  width: 1em;
+  height: 1em;
+}
+@media screen and (min-width: 768px) {
+  .navbar-toggler {
+    display: none;
+  }
+}
+
+.navbar-collapse { /* LISTADO PAGINAS */ }
+.navbar-collapse ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.navbar-collapse ul li {
+  display: inline-block;
+}
+.navbar-collapse ul li a {
+  text-decoration: none;
+  color: #FAFAFA;
+}
+.navbar-collapse ul li a:hover {
+  color: #8E8E8E;
+}
+.navbar-collapse ul li a.active {
+  color: #F4F4F4;
+}
+.navbar-collapse ul li a.active:hover {
+  color: #8E8E8E;
+}
+
 h1, h2, h3, h4, h5, h6 {
   font-family: "Nunito", sans-serif;
   font-weight: bold;
 }
 
-a {
-  text-decoration: none;
-  color: #212121;
-}
-a:hover {
-  color: #9b9b9b;
-}
-
 .blog-firma { /* FIRMA BLOG */
-  background-color: #757575;
+  background-color: #F4F4F4;
 }
 .blog-firma .blog-fotito {
   display: none;
@@ -205,9 +214,16 @@ a:hover {
 
 .footer-oscuro {
   height: 33vh;
-  color: #9b9b9b;
+  color: #8E8E8E;
 }
 .footer-oscuro .fondo-negro {
   background-color: #212121;
   z-index: 1020;
+}
+.footer-oscuro .fondo-negro a {
+  text-decoration: none;
+  color: #8E8E8E;
+}
+.footer-oscuro .fondo-negro a:hover {
+  color: #F4F4F4;
 }/*# sourceMappingURL=estilos.css.map */

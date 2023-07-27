@@ -1,19 +1,31 @@
 /* ACA VA TODO LO QUE NO QUEDO ANIDADO */
 
 .link-blanco {
-    color: #FAFAFA;
+    text-decoration: none;
+    color: $blanco-pint;
+    &:hover {
+        color: $blanco-pint;
+    }
 }
 
 .link-negro {
-    color: #212121;
+    text-decoration: none;
+    color: $negro-pint;
+    &:hover {
+        color: $negro-pint;
+    }
 }
 
 .link-gris {
-    color: #9b9b9b;
+    text-decoration: none;
+    color: $gris-principal;
+    &:hover {
+        color: $gris-principal;
+    }
 }
 
 .fondo-gris {
-    background-color: whitesmoke; /* ARMAR TRES TIPOS DE GRIS!!! */
+    background-color: $gris-terciario;
 }
 
 .index-foto { /* CONFIGURACION GENERAL FOTOS */

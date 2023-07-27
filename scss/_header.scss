@@ -25,46 +25,6 @@
     }
 }
 
-.navbar-toggler { /* BOTÓN */
-    display: block;
-    margin: 0 auto;
-    background-color: transparent; /* Agregamos un fondo transparente para el botón */
-    border: none;
-    outline: none;
-    cursor: pointer;
-    .icono-head {
-        fill: $blanco-pint;
-        color: $blanco-pint;
-        width: 1em;
-        height: 1em;
-    }
-}   
-
-.navbar-collapse { /* LISTADO PAGINAS */
-    ul {
-        list-style: none;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        li {
-            display: inline-block;
-            a {
-                text-decoration: none;
-                color: $blanco-pint;
-                &:hover {
-                    color: $gris-link;
-                }
-                &.active {
-                    color: $gris-link;
-                    &:hover {
-                        color: $gris-pint;
-                    }
-                }
-            }
-        }
-    }
-}
-
 .logo { /* LOGO */
     width: 100%;
     height: 100%;
@@ -81,5 +41,48 @@
         width: 100%;
         height: 100%;
         object-fit: cover;
+    }
+}
+
+.navbar-toggler { /* BOTÓN */
+    display: block;
+    margin: 0 auto;
+    background-color: transparent; /* Agregamos un fondo transparente para el botón */
+    border: none;
+    outline: none;
+    cursor: pointer;
+    .icono-head {
+        fill: $blanco-pint;
+        color: $blanco-pint;
+        width: 1em;
+        height: 1em;
+    }
+    @media screen and (min-width: 768px) {
+        display: none;
+    }
+}   
+
+.navbar-collapse { /* LISTADO PAGINAS */
+    ul {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        li {
+            display: inline-block;
+            a {
+                text-decoration: none;
+                color: $blanco-pint;
+                &:hover {
+                    color: $gris-secundario;
+                }
+                &.active {
+                    color: $gris-terciario;
+                    &:hover {
+                        color: $gris-secundario;
+                    }
+                }
+            }
+        }
     }
 }

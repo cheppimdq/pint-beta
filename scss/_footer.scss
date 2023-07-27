@@ -1,8 +1,15 @@
 .footer-oscuro {
     height: 33vh;
-    color: $gris-pint;
+    color: $gris-secundario;
     .fondo-negro {
         background-color: $negro-pint;
         z-index: 1020;
+        a {
+            text-decoration: none;
+            color: $gris-secundario;
+            &:hover {
+                color: $gris-terciario;
+            }
+        }
     }
 }
