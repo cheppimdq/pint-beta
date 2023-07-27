@@ -1,5 +1,38 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Comfortaa&family=Nunito&display=swap");
+.link-blanco {
+  text-decoration: none;
+  color: #F4F4F4;
+}
+.link-blanco:hover {
+  color: #FAFAFA;
+}
+.link-blanco:active {
+  color: #8E8E8E;
+}
+
+.link-negro {
+  text-decoration: none;
+  color: #212121;
+}
+.link-negro:hover {
+  color: #585858;
+}
+.link-negro:active {
+  color: #8E8E8E;
+}
+
+.link-gris {
+  text-decoration: none;
+  color: #8E8E8E;
+}
+.link-gris:hover {
+  color: #F4F4F4;
+}
+.link-gris:active {
+  color: #585858;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -13,34 +46,6 @@ body {
 }
 
 /* ACA VA TODO LO QUE NO QUEDO ANIDADO */
-.link-blanco {
-  text-decoration: none;
-  color: #FAFAFA;
-}
-.link-blanco:hover {
-  color: #FAFAFA;
-}
-
-.link-negro {
-  text-decoration: none;
-  color: #212121;
-}
-.link-negro:hover {
-  color: #212121;
-}
-
-.link-gris {
-  text-decoration: none;
-  color: #585858;
-}
-.link-gris:hover {
-  color: #585858;
-}
-
-.fondo-gris {
-  background-color: #F4F4F4;
-}
-
 .index-foto { /* CONFIGURACION GENERAL FOTOS */
   width: 100%;
   height: 100%;
@@ -192,18 +197,48 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
-.footer-oscuro {
-  height: 33vh;
-  color: #8E8E8E;
+.banner-publicidad { /* PUBLICIDAD GRANDE */
+  width: 100%;
+  object-fit: cover;
 }
-.footer-oscuro .fondo-negro {
+
+.blog-publicidad { /* PUBLICIDAD CHICA */
+  height: 21vh;
+}
+
+.boton-wp { /* WHATSAPP */
+  position: fixed;
+  bottom: 5vh;
+  right: 5vh;
+  background-color: #128C7E;
+  color: #FAFAFA;
+  border-radius: 50%;
+  padding: 2vh;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease;
+}
+.boton-wp i {
+  display: block;
+  font-size: 2em;
+}
+.boton-wp:hover {
+  background-color: #FAFAFA;
+  color: #128C7E;
+}
+
+.footer-maps { /* MAPS FOOTER */
+  height: 66vh;
+  width: 100%;
+  object-fit: cover;
+}
+
+.footer-oscuro {
+  color: #8E8E8E;
   background-color: #212121;
   z-index: 1020;
 }
-.footer-oscuro .fondo-negro a {
-  text-decoration: none;
-  color: #8E8E8E;
-}
-.footer-oscuro .fondo-negro a:hover {
-  color: #F4F4F4;
+@media screen and (min-width: 768px) {
+  .footer-oscuro {
+    height: 33vh;
+  }
 }/*# sourceMappingURL=estilos.css.map */

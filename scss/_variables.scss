@@ -8,3 +8,28 @@ $gris-principal: #585858;
 $gris-secundario: #8E8E8E;
 $gris-terciario: #F4F4F4;
 $blanco-pint: #FAFAFA;
+
+@mixin enlace-pint ($color-link, $color-hover, $color-active) {
+    text-decoration: none;
+    color: $color-link;
+
+    &:hover {
+    color: $color-hover;
+    }
+
+    &:active {
+        color: $color-active;
+    }
+}
+
+.link-blanco {
+    @include enlace-pint ($gris-terciario, $blanco-pint, $gris-secundario);
+}
+
+.link-negro {
+    @include enlace-pint ($negro-pint, $gris-principal, $gris-secundario);
+}
+
+.link-gris {
+    @include enlace-pint ($gris-secundario, $gris-terciario, $gris-principal);
+}
