@@ -13,63 +13,68 @@
 }
 
 body {
-  font-family: "Comfortaa", cursive;
-  color: #212121;
   overflow-x: hidden;
 }
 body h1, body h2, body h3, body h4, body h5, body h6 {
   font-family: "Nunito", sans-serif;
   font-weight: bold;
 }
-body .link-negro a {
-  text-decoration: none;
+body p {
+  font-family: "Comfortaa", cursive;
   color: #212121;
-}
-body .link-negro a:hover {
-  color: #585858;
-}
-body .link-negro a:active {
-  color: #8E8E8E;
-}
-body .link-negro a:active:hover {
-  color: #585858;
-}
-body .link-gris a {
-  text-decoration: none;
-  color: #8E8E8E;
-}
-body .link-gris a:hover {
-  color: #F4F4F4;
-}
-body .link-gris a:active {
-  color: #585858;
-}
-body .link-gris a:active:hover {
-  color: #F4F4F4;
-}
-body .link-blanco a {
-  text-decoration: none;
-  color: #FAFAFA;
-}
-body .link-blanco a:hover {
-  color: #585858;
-}
-body .link-blanco a:active {
-  color: #8E8E8E;
-}
-body .link-blanco a:active:hover {
-  color: #585858;
 }
 
 /* ACA VA TODO LO QUE NO QUEDO ANIDADO */
+.link-negro a {
+  text-decoration: none;
+  color: #212121;
+}
+.link-negro a:hover {
+  color: #585858;
+}
+.link-negro a:active {
+  color: #8E8E8E;
+}
+.link-negro a:active:hover {
+  color: #585858;
+}
+
+.link-gris a {
+  text-decoration: none;
+  color: #8E8E8E;
+}
+.link-gris a:hover {
+  color: #F4F4F4;
+}
+.link-gris a:active {
+  color: #585858;
+}
+.link-gris a:active:hover {
+  color: #F4F4F4;
+}
+
+.link-blanco a {
+  text-decoration: none;
+  color: #FAFAFA;
+}
+.link-blanco a:hover {
+  color: #585858;
+}
+.link-blanco a:active {
+  color: #8E8E8E;
+}
+.link-blanco a:active:hover {
+  color: #585858;
+}
+
 .empresa-perfil { /* FOTO PERFIL */
   border-radius: 50%;
   max-height: 66%;
 }
 
 .blog-fotito {
-  display: none;
   border-radius: 50%;
+  display: none;
 }
 @media screen and (min-width: 768px) {
   .blog-fotito {
@@ -77,10 +82,9 @@ body .link-blanco a:active:hover {
   }
 }
 
-.blog-firma { /* FIRMA BLOG */
+.blog-firma {
   background-color: #F4F4F4;
-}
-
+} /* FIRMA BLOG */
 .boton-in { /* BOTON LINKEDIN */
   font-size: 2rem;
   color: #0077B5;

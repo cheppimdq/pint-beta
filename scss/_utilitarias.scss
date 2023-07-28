@@ -1,8 +1,10 @@
 /* ACA VA TODO LO QUE NO QUEDO ANIDADO */
 
-.foto-pint {
-    @extend %foto-pint;
-}
+.link-negro { a { @include enlace-pint ($negro-pint, $gris-principal, $gris-secundario); } }
+.link-gris { a { @include enlace-pint ($gris-secundario, $gris-terciario, $gris-principal); } }
+.link-blanco { a { @include enlace-pint ($blanco-pint, $gris-principal, $gris-secundario); } }
+
+.foto-pint { @extend %foto-pint; }
 
 .empresa-perfil { /* FOTO PERFIL */
     @extend %foto-pint;
@@ -11,17 +13,15 @@
 }
 
 .blog-fotito {
-    display: none;
     @extend %foto-pint;
     border-radius: 50%;
+    display: none;
     @media screen and (min-width: 768px) {
         display: block;
     }
 }
 
-.blog-firma { /* FIRMA BLOG */
-    background-color: $gris-terciario;
-}
+.blog-firma { background-color: $gris-terciario; } /* FIRMA BLOG */
 
 .boton-in { /* BOTON LINKEDIN */
     font-size: 2rem;
