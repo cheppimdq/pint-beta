@@ -1,39 +1,29 @@
 /* ACA VA TODO LO QUE NO QUEDO ANIDADO */
 
-.logo { /* LOGO */
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.index-foto { /* CONFIGURACION GENERAL FOTOS */
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+.foto-pint {
+    @extend %foto-pint;
 }
 
 .empresa-perfil { /* FOTO PERFIL */
+    @extend %foto-pint;
     border-radius: 50%;
     max-height: 66%;
 }
 
-.banner-publicidad { /* PUBLICIDAD GRANDE */
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+.blog-fotito {
+    display: none;
+    @extend %foto-pint;
+    border-radius: 50%;
+    @media screen and (min-width: 768px) {
+        display: block;
+    }
 }
 
-.blog-publicidad { /* PUBLICIDAD CHICA */
-    height: 21vh;
+.blog-firma { /* FIRMA BLOG */
+    background-color: $gris-terciario;
 }
 
 .boton-in { /* BOTON LINKEDIN */
     font-size: 2rem;
     color: #0077B5;   
-}
-
-.footer-maps { /* MAPS FOOTER */
-    height: 66vh;
-    width: 100%;
-    object-fit: cover;
 }

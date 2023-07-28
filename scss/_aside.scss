@@ -1,10 +1,11 @@
-.banner-publicidad { /* PUBLICIDAD GRANDE */
-    width: 100%;
-    object-fit: cover;
+.blog-publicidad { /* PUBLICIDAD CHICA */
+    @extend %foto-pint;
+    height: 21vh;
 }
 
-.blog-publicidad { /* PUBLICIDAD CHICA */
-    height: 21vh;
+.footer-maps { /* MAPS FOOTER */
+    @extend %foto-pint;
+    height: 66vh;
 }
 
 .boton-wp { /* WHATSAPP */
@@ -17,20 +18,13 @@
     padding: 2vh;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: background-color 0.3s ease;
-
+    text-decoration: none;
     i {
         display: block;
         font-size: 2em;
-
     }
     &:hover {
         background-color: $blanco-pint;
         color: #128C7E;
     }
-}
-
-.footer-maps { /* MAPS FOOTER */
-    height: 66vh;
-    width: 100%;
-    object-fit: cover;
 }

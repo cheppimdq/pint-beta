@@ -1,5 +1,11 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Comfortaa&family=Nunito&display=swap");
+.footer-maps, .blog-publicidad, .blog-fotito, .empresa-perfil, .foto-pint {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -56,42 +62,28 @@ body .link-blanco a:active:hover {
 }
 
 /* ACA VA TODO LO QUE NO QUEDO ANIDADO */
-.logo { /* LOGO */
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-.index-foto { /* CONFIGURACION GENERAL FOTOS */
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
 .empresa-perfil { /* FOTO PERFIL */
   border-radius: 50%;
   max-height: 66%;
 }
 
-.banner-publicidad { /* PUBLICIDAD GRANDE */
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+.blog-fotito {
+  display: none;
+  border-radius: 50%;
+}
+@media screen and (min-width: 768px) {
+  .blog-fotito {
+    display: block;
+  }
 }
 
-.blog-publicidad { /* PUBLICIDAD CHICA */
-  height: 21vh;
+.blog-firma { /* FIRMA BLOG */
+  background-color: #F4F4F4;
 }
 
 .boton-in { /* BOTON LINKEDIN */
   font-size: 2rem;
   color: #0077B5;
-}
-
-.footer-maps { /* MAPS FOOTER */
-  height: 66vh;
-  width: 100%;
-  object-fit: cover;
 }
 
 .header-index { /* HEADER 100VH */
@@ -161,28 +153,12 @@ body .link-blanco a:active:hover {
   }
 }
 
-.blog-firma { /* FIRMA BLOG */
-  background-color: #F4F4F4;
-}
-.blog-firma .blog-fotito {
-  display: none;
-}
-@media screen and (min-width: 768px) {
-  .blog-firma .blog-fotito {
-    display: block;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 50%;
-  }
-}
-
-.banner-publicidad { /* PUBLICIDAD GRANDE */
-  width: 100%;
-  object-fit: cover;
-}
-
 .blog-publicidad { /* PUBLICIDAD CHICA */
   height: 21vh;
+}
+
+.footer-maps { /* MAPS FOOTER */
+  height: 66vh;
 }
 
 .boton-wp { /* WHATSAPP */
@@ -195,6 +171,7 @@ body .link-blanco a:active:hover {
   padding: 2vh;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   transition: background-color 0.3s ease;
+  text-decoration: none;
 }
 .boton-wp i {
   display: block;
@@ -203,12 +180,6 @@ body .link-blanco a:active:hover {
 .boton-wp:hover {
   background-color: #FAFAFA;
   color: #128C7E;
-}
-
-.footer-maps { /* MAPS FOOTER */
-  height: 66vh;
-  width: 100%;
-  object-fit: cover;
 }
 
 .footer-oscuro {
