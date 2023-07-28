@@ -8,4 +8,11 @@ body {
     font-family: $fuente-secundaria;
     color: $negro-pint;
     overflow-x: hidden;
+    h1, h2, h3, h4, h5, h6 { 
+        font-family: $fuente-principal;
+        font-weight: bold;
+    }
+    .link-negro { a { @include enlace-pint ($negro-pint, $gris-principal, $gris-secundario); } }
+    .link-gris { a { @include enlace-pint ($gris-secundario, $gris-terciario, $gris-principal); } }
+    .link-blanco { a { @include enlace-pint ($blanco-pint, $gris-principal, $gris-secundario); } }
 }

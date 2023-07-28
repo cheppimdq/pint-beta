@@ -1,38 +1,5 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Comfortaa&family=Nunito&display=swap");
-.link-blanco {
-  text-decoration: none;
-  color: #F4F4F4;
-}
-.link-blanco:hover {
-  color: #FAFAFA;
-}
-.link-blanco:active {
-  color: #8E8E8E;
-}
-
-.link-negro {
-  text-decoration: none;
-  color: #212121;
-}
-.link-negro:hover {
-  color: #585858;
-}
-.link-negro:active {
-  color: #8E8E8E;
-}
-
-.link-gris {
-  text-decoration: none;
-  color: #8E8E8E;
-}
-.link-gris:hover {
-  color: #F4F4F4;
-}
-.link-gris:active {
-  color: #585858;
-}
-
 * {
   margin: 0;
   padding: 0;
@@ -44,8 +11,57 @@ body {
   color: #212121;
   overflow-x: hidden;
 }
+body h1, body h2, body h3, body h4, body h5, body h6 {
+  font-family: "Nunito", sans-serif;
+  font-weight: bold;
+}
+body .link-negro a {
+  text-decoration: none;
+  color: #212121;
+}
+body .link-negro a:hover {
+  color: #585858;
+}
+body .link-negro a:active {
+  color: #8E8E8E;
+}
+body .link-negro a:active:hover {
+  color: #585858;
+}
+body .link-gris a {
+  text-decoration: none;
+  color: #8E8E8E;
+}
+body .link-gris a:hover {
+  color: #F4F4F4;
+}
+body .link-gris a:active {
+  color: #585858;
+}
+body .link-gris a:active:hover {
+  color: #F4F4F4;
+}
+body .link-blanco a {
+  text-decoration: none;
+  color: #FAFAFA;
+}
+body .link-blanco a:hover {
+  color: #585858;
+}
+body .link-blanco a:active {
+  color: #8E8E8E;
+}
+body .link-blanco a:active:hover {
+  color: #585858;
+}
 
 /* ACA VA TODO LO QUE NO QUEDO ANIDADO */
+.logo { /* LOGO */
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
 .index-foto { /* CONFIGURACION GENERAL FOTOS */
   width: 100%;
   height: 100%;
@@ -78,6 +94,15 @@ body {
   object-fit: cover;
 }
 
+.header-index { /* HEADER 100VH */
+  background-color: #212121;
+}
+@media screen and (min-width: 768px) {
+  .header-index {
+    height: 100vh;
+  }
+}
+
 .header-sticky { /* HEADER PEGAJOSO */
   height: auto;
   background-color: #212121;
@@ -90,16 +115,6 @@ body {
   }
 }
 
-.header-index { /* HEADER 100VH */
-  height: auto;
-  background-color: #212121;
-}
-@media screen and (min-width: 768px) {
-  .header-index {
-    height: 100vh;
-  }
-}
-
 .nav-sticky { /* NAVEGACION PEGAJOSA */
   position: static;
 }
@@ -109,12 +124,6 @@ body {
     top: 0;
     z-index: 1020;
   }
-}
-
-.logo { /* LOGO */
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
 }
 
 .video-header { /* VIDEO 100VH */
@@ -135,9 +144,7 @@ body {
 .navbar-toggler { /* BOTÓN */
   display: block;
   margin: 0 auto;
-  background-color: transparent; /* Agregamos un fondo transparente para el botón */
-  border: none;
-  outline: none;
+  background-color: transparent;
   cursor: pointer;
 }
 .navbar-toggler .icono-head {
@@ -145,40 +152,13 @@ body {
   color: #FAFAFA;
   width: 1em;
   height: 1em;
+  border: none;
+  outline: none;
 }
 @media screen and (min-width: 768px) {
   .navbar-toggler {
     display: none;
   }
-}
-
-.navbar-collapse { /* LISTADO PAGINAS */ }
-.navbar-collapse ul {
-  list-style: none;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.navbar-collapse ul li {
-  display: inline-block;
-}
-.navbar-collapse ul li a {
-  text-decoration: none;
-  color: #FAFAFA;
-}
-.navbar-collapse ul li a:hover {
-  color: #8E8E8E;
-}
-.navbar-collapse ul li a.active {
-  color: #F4F4F4;
-}
-.navbar-collapse ul li a.active:hover {
-  color: #8E8E8E;
-}
-
-h1, h2, h3, h4, h5, h6 {
-  font-family: "Nunito", sans-serif;
-  font-weight: bold;
 }
 
 .blog-firma { /* FIRMA BLOG */
@@ -190,7 +170,6 @@ h1, h2, h3, h4, h5, h6 {
 @media screen and (min-width: 768px) {
   .blog-firma .blog-fotito {
     display: block;
-    width: 100%;
     height: 100%;
     object-fit: cover;
     border-radius: 50%;
