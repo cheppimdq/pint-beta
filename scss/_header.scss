@@ -1,5 +1,5 @@
 .header-index { /* HEADER 100VH */
-    background-color: $negro-pint;
+    background-color: map-get($color-pint, negro);
     @media screen and (min-width: 768px) {
         height: 100vh;
     }
@@ -7,7 +7,7 @@
 
 .header-sticky { /* HEADER PEGAJOSO */
     height: auto;
-    background-color: $negro-pint;
+    background-color: map-get($color-pint, negro);
     @media screen and (min-width: 768px) {
         position: sticky;
         top: 0;
@@ -43,8 +43,8 @@
     background-color: transparent;
     cursor: pointer;
     .icono-head {
-        fill: $blanco-pint;
-        color: $blanco-pint;
+        fill: map-get($color-pint, blanco);
+        color: map-get($color-pint, blanco);
         width: 1em;
         height: 1em;
         border: none;

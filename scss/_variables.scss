@@ -1,23 +1,32 @@
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa&family=Nunito&display=swap');
 
-$fuente-principal: 'Nunito', sans-serif;
-$fuente-secundaria: 'Comfortaa', cursive;
+$fuente-pint: (
+    titulo: 'Nunito, sans-serif',
+    parrafo: 'Comfortaa, cursive'
+);
 
-$negro-pint: #212121;
-$gris-principal: #585858;
-$gris-secundario: #8E8E8E;
-$gris-terciario: #F4F4F4;
-$blanco-pint: #FAFAFA;
-
-@mixin enlace-pint ($color-link, $color-hover, $color-activo) {
-    text-decoration: none;
-    color: $color-link;
-    &:hover { color: $color-hover; }
-    &:active { color: $color-activo; &:hover { color: $color-hover; } }
-}
+$color-pint: (
+    negro: #212121,
+    gris-negro: #585858,
+    gris-medio: #8E8E8E,
+    gris-blanco: #F4F4F4,
+    blanco: #FAFAFA,
+    whatsapp: #128C7E,
+    linkedin: #0077B5
+);
 
 %foto-pint {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+    width: 100%; 
+    height: 100%; 
+    object-fit: cover; 
+}
+
+@mixin enlace-pint($color-link, $color-hover, $color-activo) {
+    text-decoration: none;
+    color: map-get($color-pint, $color-link);
+        &:hover { color: map-get($color-pint, $color-hover); }
+        &:active {
+            color: map-get($color-pint, $color-activo);
+            &:hover { color: map-get($color-pint, $color-hover); }
+        }
 }

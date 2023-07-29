@@ -5,13 +5,14 @@
 }
 
 body {
-    h1, h2, h3, h4, h5, h6 {
-        font-family: $fuente-principal;
-        font-weight: bold;
-    }
-    p { 
-        font-family: $fuente-secundaria;
-        color: $negro-pint;
-    }
     overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: map-get($fuente-pint, titulo);
+    font-weight: bold;
+}
+p { 
+    font-family: map-get($fuente-pint, parrafo);
+    color: map-get($color-pint, negro);
 }

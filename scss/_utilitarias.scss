@@ -1,8 +1,8 @@
 /* ACA VA TODO LO QUE NO QUEDO ANIDADO */
 
-.link-negro { a { @include enlace-pint ($negro-pint, $gris-principal, $gris-secundario); } }
-.link-gris { a { @include enlace-pint ($gris-secundario, $gris-terciario, $gris-principal); } }
-.link-blanco { a { @include enlace-pint ($blanco-pint, $gris-principal, $gris-secundario); } }
+.link-negro { a { @include enlace-pint(negro, gris-negro, gris-medio); } } 
+.link-gris { a { @include enlace-pint(gris-medio, blanco, gris-blanco); } } 
+.link-blanco { a { @include enlace-pint(blanco, gris-medio, negro); } }
 
 .foto-pint { @extend %foto-pint; }
 
@@ -21,9 +21,22 @@
     }
 }
 
-.blog-firma { background-color: $gris-terciario; } /* FIRMA BLOG */
+.blog-firma { background-color: map-get($color-pint, gris-blanco); } /* FIRMA BLOG */
 
 .boton-in { /* BOTON LINKEDIN */
     font-size: 2rem;
-    color: #0077B5;   
+    color: map-get($color-pint, linkedin);   
+}
+
+.flex-pint {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
 }

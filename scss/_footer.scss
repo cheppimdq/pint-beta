@@ -1,6 +1,6 @@
 .footer-oscuro {
-    color: $gris-secundario;
-    background-color: $negro-pint;
+    color: map-get($color-pint, gris-medio);
+    background-color: map-get($color-pint, negro);
     z-index: 1020;
     @media screen and (min-width: 768px) { height: 33vh; }
 }

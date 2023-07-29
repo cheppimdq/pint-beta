@@ -15,12 +15,14 @@
 body {
   overflow-x: hidden;
 }
-body h1, body h2, body h3, body h4, body h5, body h6 {
-  font-family: "Nunito", sans-serif;
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Nunito, sans-serif";
   font-weight: bold;
 }
-body p {
-  font-family: "Comfortaa", cursive;
+
+p {
+  font-family: "Comfortaa, cursive";
   color: #212121;
 }
 
@@ -44,13 +46,13 @@ body p {
   color: #8E8E8E;
 }
 .link-gris a:hover {
-  color: #F4F4F4;
+  color: #FAFAFA;
 }
 .link-gris a:active {
-  color: #585858;
+  color: #F4F4F4;
 }
 .link-gris a:active:hover {
-  color: #F4F4F4;
+  color: #FAFAFA;
 }
 
 .link-blanco a {
@@ -58,13 +60,13 @@ body p {
   color: #FAFAFA;
 }
 .link-blanco a:hover {
-  color: #585858;
-}
-.link-blanco a:active {
   color: #8E8E8E;
 }
+.link-blanco a:active {
+  color: #212121;
+}
 .link-blanco a:active:hover {
-  color: #585858;
+  color: #8E8E8E;
 }
 
 .empresa-perfil { /* FOTO PERFIL */
@@ -88,6 +90,19 @@ body p {
 .boton-in { /* BOTON LINKEDIN */
   font-size: 2rem;
   color: #0077B5;
+}
+
+.flex-pint {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
 }
 
 .header-index { /* HEADER 100VH */
