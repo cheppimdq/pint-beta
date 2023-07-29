@@ -1,14 +1,6 @@
-.blog-publicidad { /* PUBLICIDAD CHICA */
-    @extend %foto-pint;
-    height: 21vh;
-}
+/* WHATSAPP */
 
-.footer-maps { /* MAPS FOOTER */
-    @extend %foto-pint;
-    height: 66vh;
-}
-
-.boton-wp { /* WHATSAPP */
+.boton-wp { 
     position: fixed;
     bottom: 5vh;
     right: 5vh;

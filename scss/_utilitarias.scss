@@ -1,15 +1,16 @@
-/* ACA VA TODO LO QUE NO QUEDO ANIDADO */
+/* LINKS */
 
 .link-negro { a { @include enlace-pint(negro, gris-negro, gris-medio); } } 
 .link-gris { a { @include enlace-pint(gris-medio, blanco, gris-blanco); } } 
 .link-blanco { a { @include enlace-pint(blanco, gris-medio, negro); } }
 
+/* FOTOS - IMAGENES */
+
 .foto-pint { @extend %foto-pint; }
 
-.empresa-perfil { /* FOTO PERFIL */
+.empresa-perfil { 
     @extend %foto-pint;
     border-radius: 50%;
-    max-height: 66%;
 }
 
 .blog-fotito {
@@ -20,6 +21,18 @@
         display: block;
     }
 }
+
+.blog-publicidad { /* PUBLICIDAD CHICA */
+    @extend %foto-pint;
+    height: 21vh;
+}
+
+.footer-maps { /* MAPS FOOTER */
+    @extend %foto-pint;
+    height: 66vh;
+}
+
+/* + + + */
 
 .blog-firma { background-color: map-get($color-pint, gris-blanco); } /* FIRMA BLOG */
 
@@ -34,9 +47,10 @@
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    align-content: center;
     text-align: center;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-    margin-top: 1.5rem;
-    margin-bottom: 1.5rem;
+    padding-top: 1.3rem;
+    padding-bottom: 1.3rem;
+    margin-top: 1.3rem;
+    margin-bottom: 1.3rem;
 }

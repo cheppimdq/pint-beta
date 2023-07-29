@@ -13,20 +13,18 @@
 }
 
 body {
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* Explorer */
   overflow-x: hidden;
 }
-
-h1, h2, h3, h4, h5, h6 {
-  font-family: "Nunito, sans-serif";
-  font-weight: bold;
+body::-webkit-scrollbar {
+  width: 0;
+}
+body::-webkit-scrollbar-horizontal {
+  display: none;
 }
 
-p {
-  font-family: "Comfortaa, cursive";
-  color: #212121;
-}
-
-/* ACA VA TODO LO QUE NO QUEDO ANIDADO */
+/* LINKS */
 .link-negro a {
   text-decoration: none;
   color: #212121;
@@ -69,9 +67,9 @@ p {
   color: #8E8E8E;
 }
 
-.empresa-perfil { /* FOTO PERFIL */
+/* FOTOS - IMAGENES */
+.empresa-perfil {
   border-radius: 50%;
-  max-height: 66%;
 }
 
 .blog-fotito {
@@ -84,6 +82,15 @@ p {
   }
 }
 
+.blog-publicidad { /* PUBLICIDAD CHICA */
+  height: 21vh;
+}
+
+.footer-maps { /* MAPS FOOTER */
+  height: 66vh;
+}
+
+/* + + + */
 .blog-firma {
   background-color: #F4F4F4;
 } /* FIRMA BLOG */
@@ -98,11 +105,12 @@ p {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+  align-content: center;
   text-align: center;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-  margin-top: 1.5rem;
-  margin-bottom: 1.5rem;
+  padding-top: 1.3rem;
+  padding-bottom: 1.3rem;
+  margin-top: 1.3rem;
+  margin-bottom: 1.3rem;
 }
 
 .header-index { /* HEADER 100VH */
@@ -172,15 +180,18 @@ p {
   }
 }
 
-.blog-publicidad { /* PUBLICIDAD CHICA */
-  height: 21vh;
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Nunito, sans-serif";
+  font-weight: bold;
 }
 
-.footer-maps { /* MAPS FOOTER */
-  height: 66vh;
+p {
+  font-family: "Comfortaa, cursive";
+  color: #212121;
 }
 
-.boton-wp { /* WHATSAPP */
+/* WHATSAPP */
+.boton-wp {
   position: fixed;
   bottom: 5vh;
   right: 5vh;
@@ -205,9 +216,4 @@ p {
   color: #8E8E8E;
   background-color: #212121;
   z-index: 1020;
-}
-@media screen and (min-width: 768px) {
-  .footer-oscuro {
-    height: 33vh;
-  }
 }/*# sourceMappingURL=estilos.css.map */
