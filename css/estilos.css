@@ -232,18 +232,6 @@ p {
   padding: 1rem;
 }
 
-.animacion-debajo {
-  animation: fadeInUp; /* referring directly to the animation's @keyframe declaration */
-  animation-duration: 1s; /* don't forget to set a duration! */
-  delay: 2s;
-}
-
-.animacion-index {
-  animation: fadeInRight; /* referring directly to the animation's @keyframe declaration */
-  animation-duration: 1s; /* don't forget to set a duration! */
-  delay: 2s;
-}
-
 /* WHATSAPP */
 .boton-wp {
   position: fixed;
