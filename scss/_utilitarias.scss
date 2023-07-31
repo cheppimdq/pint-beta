@@ -8,15 +8,11 @@
 
 .foto-pint { @extend %foto-pint; }
 
-.logo-pint {
-    @extend %foto-pint;
-    max-height: 100%;
-}
+
 
 .empresa-perfil { 
     @extend %foto-pint;
     max-width: 100%;
-    height: auto;
     border-radius: 50%;
 }
 
