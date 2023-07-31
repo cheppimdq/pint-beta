@@ -19,18 +19,31 @@ $color-pint: (
     width: 100%; 
     height: auto; 
     object-fit: cover;
+};
+
+%flex-pint {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
 }
 
 @mixin enlace-pint($color-link, $color-hover, $color-activo) {
+
     font-size: 0.9rem;
     text-decoration: none;
     color: map-get($color-pint, $color-link);
-        &:hover { color: map-get($color-pint, $color-hover); }
-        &:active {
-            color: map-get($color-pint, $color-activo);
-            &:hover { color: map-get($color-pint, $color-hover); }
-        }
+
+    &:hover { color: map-get($color-pint, $color-hover); };
+
+    &:active {
+        color: map-get($color-pint, $color-activo);
+        &:hover { color: map-get($color-pint, $color-hover); };
+    };
+
     @media screen and (min-width: 576px) {
         font-size: 1rem;
-    }
-}
+    };
+
+};

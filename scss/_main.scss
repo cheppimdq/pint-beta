@@ -1,4 +1,3 @@
-
 h1, h2, h3, h4, h5, h6 {
     font-family: map-get($fuente-pint, titulo);
     font-weight: bold;
@@ -12,21 +11,25 @@ p {
 .fondo-gris { background-image: radial-gradient(circle, #fafafa, #f8f9f8, #f7f7f7, #f5f6f5, #f4f4f4); }
 
 .flex-pint {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
+    @extend %flex-pint;
     align-items: center;
-    align-content: center;
     text-align: center;
-    padding-top: 1.3rem;
-    padding-bottom: 1.3rem;
-    margin-top: 1.3rem;
-    margin-bottom: 1.3rem;
-
     .boton-in { /* BOTON LINKEDIN */
         font-size: 2rem;
         color: map-get($color-pint, linkedin); 
     }
-    
+}
+
+.flex-publicidad {
+    @extend %flex-pint;
+    margin: 1.5rem;
+    .blog-publicidad { /* PUBLICIDAD CHICA */
+        @extend %foto-pint;
+        height: 21vh;
+    }
+}
+
+.start-pint {
+    @extend %flex-pint;
+    align-items: start;
 }

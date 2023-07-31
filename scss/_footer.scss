@@ -2,4 +2,7 @@
     color: map-get($color-pint, gris-medio);
     background-color: map-get($color-pint, negro);
     z-index: 1020;
+    .flex-pint {
+        height: 16vh;
+    }
 }
