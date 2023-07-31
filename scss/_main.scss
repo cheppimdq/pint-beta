@@ -8,7 +8,6 @@ p {
     color: map-get($color-pint, negro);
 }
 
-.fondo-gris { background-image: radial-gradient(circle, #fafafa, #f8f9f8, #f7f7f7, #f5f6f5, #f4f4f4); }
 
 .flex-pint {
     @extend %flex-pint;
@@ -32,6 +31,12 @@ p {
 .start-pint {
     @extend %flex-pint;
     align-items: start;
+}
+
+.columna-pint {
+    @extend %flex-pint;
+    flex-direction: column;
+    padding: 1rem;
 }
 
 .animacion-debajo {

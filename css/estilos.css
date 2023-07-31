@@ -6,7 +6,7 @@
   object-fit: cover;
 }
 
-.start-pint, .flex-publicidad, .flex-pint {
+.columna-pint, .start-pint, .flex-publicidad, .flex-pint {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -119,6 +119,10 @@ body::-webkit-scrollbar-horizontal {
 }
 
 /* + + + */
+.fondo-gris {
+  background-image: radial-gradient(circle, #fafafa, #f8f9f8, #f7f7f7, #f5f6f5, #f4f4f4);
+}
+
 .blog-firma {
   background-color: #F4F4F4;
 } /* FIRMA BLOG */
@@ -203,10 +207,6 @@ p {
   color: #212121;
 }
 
-.fondo-gris {
-  background-image: radial-gradient(circle, #fafafa, #f8f9f8, #f7f7f7, #f5f6f5, #f4f4f4);
-}
-
 .flex-pint {
   align-items: center;
   text-align: center;
@@ -225,6 +225,11 @@ p {
 
 .start-pint {
   align-items: start;
+}
+
+.columna-pint {
+  flex-direction: column;
+  padding: 1rem;
 }
 
 .animacion-debajo {

@@ -36,6 +36,8 @@
 
 /* + + + */
 
+.fondo-gris { background-image: radial-gradient(circle, #fafafa, #f8f9f8, #f7f7f7, #f5f6f5, #f4f4f4); }
+
 .blog-firma { background-color: map-get($color-pint, gris-blanco); } /* FIRMA BLOG */
 
 .negrita-pint { font-weight: bold; }
