@@ -128,7 +128,7 @@ body::-webkit-scrollbar-horizontal {
 .header-index { /* HEADER 100VH */
   background-color: #212121;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 640px) {
   .header-index {
     height: 100vh;
   }
@@ -138,7 +138,7 @@ body::-webkit-scrollbar-horizontal {
   height: auto;
   background-color: #212121;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 640px) {
   .header-sticky {
     position: sticky;
     top: 0;
@@ -149,7 +149,7 @@ body::-webkit-scrollbar-horizontal {
 .nav-sticky { /* NAVEGACION PEGAJOSA */
   position: static;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 640px) {
   .nav-sticky {
     position: sticky;
     top: 0;
@@ -160,7 +160,7 @@ body::-webkit-scrollbar-horizontal {
 .video-header { /* VIDEO 100VH */
   display: none;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 640px) {
   .video-header {
     display: flex;
     position: absolute;
@@ -178,7 +178,13 @@ body::-webkit-scrollbar-horizontal {
   background-color: transparent;
   cursor: pointer;
 }
-.navbar-toggler .icono-head {
+@media screen and (min-width: 640px) {
+  .navbar-toggler {
+    display: none;
+  }
+}
+
+.icono-head {
   fill: #FAFAFA;
   color: #FAFAFA;
   width: 1em;
@@ -186,14 +192,14 @@ body::-webkit-scrollbar-horizontal {
   border: none;
   outline: none;
 }
-@media screen and (min-width: 768px) {
-  .navbar-toggler {
+@media screen and (min-width: 640px) {
+  .icono-head {
     display: none;
   }
 }
 
 .logo-pint {
-  max-height: 100%;
+  max-height: 225px;
 }
 
 h1, h2, h3, h4, h5, h6 {
