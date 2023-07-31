@@ -10,11 +10,13 @@
 
 .logo-pint {
     @extend %foto-pint;
-    max-height: 200px;
+    max-height: 100%;
 }
 
 .empresa-perfil { 
     @extend %foto-pint;
+    max-width: 100%;
+    height: auto;
     border-radius: 50%;
 }
 
@@ -41,21 +43,5 @@
 
 .blog-firma { background-color: map-get($color-pint, gris-blanco); } /* FIRMA BLOG */
 
-.boton-in { /* BOTON LINKEDIN */
-    font-size: 2rem;
-    color: map-get($color-pint, linkedin);   
-}
 
-.flex-pint {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    align-content: center;
-    text-align: center;
-    padding-top: 1.3rem;
-    padding-bottom: 1.3rem;
-    margin-top: 1.3rem;
-    margin-bottom: 1.3rem;
-}
+

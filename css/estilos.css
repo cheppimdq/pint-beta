@@ -26,6 +26,7 @@ body::-webkit-scrollbar-horizontal {
 
 /* LINKS */
 .link-negro a {
+  font-size: 0.9rem;
   text-decoration: none;
   color: #212121;
 }
@@ -38,8 +39,14 @@ body::-webkit-scrollbar-horizontal {
 .link-negro a:active:hover {
   color: #585858;
 }
+@media screen and (min-width: 576px) {
+  .link-negro a {
+    font-size: 1rem;
+  }
+}
 
 .link-gris a {
+  font-size: 0.9rem;
   text-decoration: none;
   color: #8E8E8E;
 }
@@ -52,8 +59,14 @@ body::-webkit-scrollbar-horizontal {
 .link-gris a:active:hover {
   color: #FAFAFA;
 }
+@media screen and (min-width: 576px) {
+  .link-gris a {
+    font-size: 1rem;
+  }
+}
 
 .link-blanco a {
+  font-size: 0.9rem;
   text-decoration: none;
   color: #FAFAFA;
 }
@@ -66,13 +79,20 @@ body::-webkit-scrollbar-horizontal {
 .link-blanco a:active:hover {
   color: #8E8E8E;
 }
+@media screen and (min-width: 576px) {
+  .link-blanco a {
+    font-size: 1rem;
+  }
+}
 
 /* FOTOS - IMAGENES */
 .logo-pint {
-  max-height: 200px;
+  max-height: 100%;
 }
 
 .empresa-perfil {
+  max-width: 100%;
+  height: auto;
   border-radius: 50%;
 }
 
@@ -98,25 +118,6 @@ body::-webkit-scrollbar-horizontal {
 .blog-firma {
   background-color: #F4F4F4;
 } /* FIRMA BLOG */
-.boton-in { /* BOTON LINKEDIN */
-  font-size: 2rem;
-  color: #0077B5;
-}
-
-.flex-pint {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  align-content: center;
-  text-align: center;
-  padding-top: 1.3rem;
-  padding-bottom: 1.3rem;
-  margin-top: 1.3rem;
-  margin-bottom: 1.3rem;
-}
-
 .header-index { /* HEADER 100VH */
   background-color: #212121;
 }
@@ -195,7 +196,25 @@ p {
 }
 
 .fondo-gris {
-  background-color: #F4F4F4;
+  background-image: radial-gradient(circle, #fafafa, #f8f9f8, #f7f7f7, #f5f6f5, #f4f4f4);
+}
+
+.flex-pint {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  text-align: center;
+  padding-top: 1.3rem;
+  padding-bottom: 1.3rem;
+  margin-top: 1.3rem;
+  margin-bottom: 1.3rem;
+}
+.flex-pint .boton-in { /* BOTON LINKEDIN */
+  font-size: 2rem;
+  color: #0077B5;
 }
 
 /* WHATSAPP */
