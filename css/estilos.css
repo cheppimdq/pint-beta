@@ -122,6 +122,10 @@ body::-webkit-scrollbar-horizontal {
 .blog-firma {
   background-color: #F4F4F4;
 } /* FIRMA BLOG */
+.negrita-pint {
+  font-weight: bold;
+}
+
 .header-index { /* HEADER 100VH */
   background-color: #212121;
 }
@@ -221,6 +225,16 @@ p {
 
 .start-pint {
   align-items: start;
+}
+
+.animacion-comunidades {
+  animation: fadeInUp; /* referring directly to the animation's @keyframe declaration */
+  animation-duration: 1s; /* don't forget to set a duration! */
+}
+
+.animacion-index {
+  animation: fadeInRight; /* referring directly to the animation's @keyframe declaration */
+  animation-duration: 1s; /* don't forget to set a duration! */
 }
 
 /* WHATSAPP */
