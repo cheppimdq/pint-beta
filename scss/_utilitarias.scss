@@ -8,6 +8,11 @@
 
 .foto-pint { @extend %foto-pint; }
 
+.logo-pint {
+    @extend %foto-pint;
+    max-height: 200px;
+}
+
 .empresa-perfil { 
     @extend %foto-pint;
     border-radius: 50%;
@@ -17,7 +22,7 @@
     @extend %foto-pint;
     border-radius: 50%;
     display: none;
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: 576px) {
         display: block;
     }
 }

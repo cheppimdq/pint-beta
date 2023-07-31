@@ -8,3 +8,7 @@ p {
     font-family: map-get($fuente-pint, parrafo);
     color: map-get($color-pint, negro);
 }
+
+.fondo-gris {
+    background-color: map-get($color-pint,gris-blanco);
+};
