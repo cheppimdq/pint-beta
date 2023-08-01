@@ -8,7 +8,6 @@ p {
     color: map-get($color-pint, negro);
 }
 
-
 .flex-pint {
     @extend %flex-pint;
     align-items: center;
