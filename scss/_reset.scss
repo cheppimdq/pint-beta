@@ -5,13 +5,5 @@
 }
 
 body {
-    scrollbar-width: none;  /* Firefox */
-    -ms-overflow-style: none;  /* Explorer */
-    &::-webkit-scrollbar {
-        width: 0;
-    }
-    &::-webkit-scrollbar-horizontal {
-        display: none;
-    }
     overflow-x: hidden;
 }

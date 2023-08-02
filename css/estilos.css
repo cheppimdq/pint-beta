@@ -21,15 +21,7 @@
 }
 
 body {
-  scrollbar-width: none; /* Firefox */
-  -ms-overflow-style: none; /* Explorer */
   overflow-x: hidden;
-}
-body::-webkit-scrollbar {
-  width: 0;
-}
-body::-webkit-scrollbar-horizontal {
-  display: none;
 }
 
 /* LINKS */
@@ -235,6 +227,10 @@ p {
 .columna-pint {
   flex-direction: column;
   padding: 1rem;
+}
+
+.animacion-pint {
+  overflow-x: hidden;
 }
 
 /* WHATSAPP */
