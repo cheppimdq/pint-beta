@@ -1,7 +1,7 @@
 /* LINKS */
 
 .link-negro { a { @include enlace-pint(negro, gris-negro, gris-medio); } } 
-.link-gris { a { @include enlace-pint(gris-medio, blanco, gris-blanco); } } 
+.link-gris { .nav-link, .nav-link:hover, .nav-link.active { @include enlace-pint(gris-medio, blanco, gris-negro); } } 
 .link-blanco { .nav-link, .nav-link:hover, .nav-link.active { @include enlace-pint(blanco, azul, gris-medio); } }
 
 

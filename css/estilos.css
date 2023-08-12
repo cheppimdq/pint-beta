@@ -45,22 +45,22 @@ body {
   }
 }
 
-.link-gris a {
+.link-gris .nav-link, .link-gris .nav-link:hover, .link-gris .nav-link.active {
   font-size: 0.9rem;
   text-decoration: none;
   color: #8E8E8E;
 }
-.link-gris a:hover {
+.link-gris .nav-link:hover, .link-gris .nav-link:hover:hover, .link-gris .nav-link.active:hover {
   color: #FAFAFA;
 }
-.link-gris a.active {
-  color: #F4F4F4;
+.link-gris .nav-link.active, .link-gris .nav-link:hover.active, .link-gris .nav-link.active.active {
+  color: #585858;
 }
-.link-gris a.active:hover {
+.link-gris .nav-link.active:hover, .link-gris .nav-link:hover.active:hover, .link-gris .nav-link.active.active:hover {
   color: #FAFAFA;
 }
 @media screen and (min-width: 576px) {
-  .link-gris a {
+  .link-gris .nav-link, .link-gris .nav-link:hover, .link-gris .nav-link.active {
     font-size: 1rem;
   }
 }
