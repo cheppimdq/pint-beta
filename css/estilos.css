@@ -95,7 +95,7 @@ body {
   border-radius: 50%;
   display: none;
 }
-@media screen and (min-width: 576px) {
+@media screen and (min-width: 640px) {
   .blog-fotito {
     display: block;
   }
