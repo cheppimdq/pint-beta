@@ -2,7 +2,7 @@
 
 .link-negro { a { @include enlace-pint(negro, gris-negro, gris-medio); } } 
 .link-gris { a { @include enlace-pint(gris-medio, blanco, gris-blanco); } } 
-.link-blanco { .nav-link, .nav-link:hover, .nav-link.active { @include enlace-pint(gris-blanco, blanco, gris-medio); } }
+.link-blanco { .nav-link, .nav-link:hover, .nav-link.active { @include enlace-pint(blanco, azul, gris-medio); } }
 
 
 /* FOTOS - IMAGENES */

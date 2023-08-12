@@ -68,16 +68,16 @@ body {
 .link-blanco .nav-link, .link-blanco .nav-link:hover, .link-blanco .nav-link.active {
   font-size: 0.9rem;
   text-decoration: none;
-  color: #F4F4F4;
+  color: #FAFAFA;
 }
 .link-blanco .nav-link:hover, .link-blanco .nav-link:hover:hover, .link-blanco .nav-link.active:hover {
-  color: #FAFAFA;
+  color: #B6E3FF;
 }
 .link-blanco .nav-link.active, .link-blanco .nav-link:hover.active, .link-blanco .nav-link.active.active {
   color: #8E8E8E;
 }
 .link-blanco .nav-link.active:hover, .link-blanco .nav-link:hover.active:hover, .link-blanco .nav-link.active.active:hover {
-  color: #FAFAFA;
+  color: #B6E3FF;
 }
 @media screen and (min-width: 576px) {
   .link-blanco .nav-link, .link-blanco .nav-link:hover, .link-blanco .nav-link.active {
