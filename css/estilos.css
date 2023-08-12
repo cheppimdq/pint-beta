@@ -33,10 +33,10 @@ body {
 .link-negro a:hover {
   color: #585858;
 }
-.link-negro a:active {
+.link-negro a.active {
   color: #8E8E8E;
 }
-.link-negro a:active:hover {
+.link-negro a.active:hover {
   color: #585858;
 }
 @media screen and (min-width: 576px) {
@@ -53,10 +53,10 @@ body {
 .link-gris a:hover {
   color: #FAFAFA;
 }
-.link-gris a:active {
+.link-gris a.active {
   color: #F4F4F4;
 }
-.link-gris a:active:hover {
+.link-gris a.active:hover {
   color: #FAFAFA;
 }
 @media screen and (min-width: 576px) {
@@ -65,22 +65,22 @@ body {
   }
 }
 
-.link-blanco a {
+.link-blanco .nav-link, .link-blanco .nav-link:hover, .link-blanco .nav-link.active {
   font-size: 0.9rem;
   text-decoration: none;
+  color: #F4F4F4;
+}
+.link-blanco .nav-link:hover, .link-blanco .nav-link:hover:hover, .link-blanco .nav-link.active:hover {
   color: #FAFAFA;
 }
-.link-blanco a:hover {
+.link-blanco .nav-link.active, .link-blanco .nav-link:hover.active, .link-blanco .nav-link.active.active {
   color: #8E8E8E;
 }
-.link-blanco a:active {
-  color: #212121;
-}
-.link-blanco a:active:hover {
-  color: #8E8E8E;
+.link-blanco .nav-link.active:hover, .link-blanco .nav-link:hover.active:hover, .link-blanco .nav-link.active.active:hover {
+  color: #FAFAFA;
 }
 @media screen and (min-width: 576px) {
-  .link-blanco a {
+  .link-blanco .nav-link, .link-blanco .nav-link:hover, .link-blanco .nav-link.active {
     font-size: 1rem;
   }
 }

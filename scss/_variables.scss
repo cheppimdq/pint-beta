@@ -37,7 +37,7 @@ $color-pint: (
 
     &:hover { color: map-get($color-pint, $color-hover); };
 
-    &:active {
+    &.active {
         color: map-get($color-pint, $color-activo);
         &:hover { color: map-get($color-pint, $color-hover); };
     };
