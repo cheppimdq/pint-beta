@@ -212,11 +212,10 @@ p {
   font-size: 2rem;
   color: #0077B5;
 }
-
-.blog-publicidad { /* PUBLICIDAD CHICA */
+.flex-pint .blog-publicidad { /* PUBLICIDAD CHICA */
   height: 21vh;
   width: auto;
-  margin: 0.3rem;
+  margin: 0.5rem;
 }
 
 .start-pint {

@@ -16,15 +16,12 @@ p {
         font-size: 2rem;
         color: map-get($color-pint, linkedin); 
     }
-}
-
-
     .blog-publicidad { /* PUBLICIDAD CHICA */
         height: 21vh;
         width: auto;
-        margin: 0.3rem;
+        margin: 0.5rem;
     }
-
+}
 
 .start-pint {
     @extend %flex-pint;
