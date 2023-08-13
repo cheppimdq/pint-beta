@@ -45,7 +45,7 @@ $color-pint: (
         &:hover { color: map-get($color-pint, $color-hover); };
     };
 
-    @media screen and (min-width: 576px) {
+    @media screen and (min-width: 640px) {
         font-size: 1rem;
     };
 
