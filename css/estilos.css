@@ -24,14 +24,6 @@
 body {
   overflow-x: hidden;
 }
-body .ocultar {
-  display: none;
-}
-@media screen and (min-width: 576px) {
-  body .ocultar {
-    display: block;
-  }
-}
 
 /* LINKS */
 .link-negro a {
@@ -114,7 +106,6 @@ body .ocultar {
   height: 66vh;
 }
 
-/* + + + */
 .fondo-gris {
   background-image: radial-gradient(circle, #fafafa, #f8f9f8, #f7f7f7, #f5f6f5, #f4f4f4);
 }
@@ -240,6 +231,15 @@ p {
 
 .animacion-pint {
   overflow-x: hidden;
+}
+
+.ocultar {
+  display: none;
+}
+@media screen and (min-width: 640px) {
+  .ocultar {
+    display: block;
+  }
 }
 
 /* WHATSAPP */
