@@ -18,14 +18,13 @@ p {
     }
 }
 
-.flex-publicidad {
-    @extend %flex-pint;
-    margin: 1.5rem;
+
     .blog-publicidad { /* PUBLICIDAD CHICA */
-        @extend %foto-pint;
         height: 21vh;
+        width: auto;
+        margin: 0.3rem;
     }
-}
+
 
 .start-pint {
     @extend %flex-pint;
