@@ -12,14 +12,22 @@ p {
     @extend %flex-pint;
     align-items: center;
     text-align: center;
-    .boton-in { /* BOTON LINKEDIN */
-        font-size: 2rem;
-        color: map-get($color-pint, linkedin); 
-    }
     .blog-publicidad { /* PUBLICIDAD CHICA */
         height: 21vh;
         width: auto;
         margin: 0.5rem;
+    }
+    .blog-fotito {
+        @extend %foto-pint;
+        border-radius: 50%;
+        display: none;
+        @media screen and (min-width: 640px) {
+            display: block;
+        }
+    }
+    .boton-in { /* BOTON LINKEDIN */
+        font-size: 2rem;
+        color: map-get($color-pint, linkedin); 
     }
 }
 

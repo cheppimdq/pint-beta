@@ -1,7 +1,7 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
 @import url("https://allfont.net/allfont.css?fonts=comfortaa-thin");
-.logo-pint, .footer-maps, .blog-fotito, .empresa-perfil, .foto-pint {
+.flex-pint .blog-fotito, .logo-pint, .footer-maps, .empresa-perfil, .foto-pint {
   width: 100%;
   height: auto;
   object-fit: cover;
@@ -90,16 +90,6 @@ body {
 .empresa-perfil {
   max-width: 100%;
   border-radius: 50%;
-}
-
-.blog-fotito {
-  border-radius: 50%;
-  display: none;
-}
-@media screen and (min-width: 640px) {
-  .blog-fotito {
-    display: block;
-  }
 }
 
 .footer-maps { /* MAPS FOOTER */
@@ -208,14 +198,23 @@ p {
   align-items: center;
   text-align: center;
 }
-.flex-pint .boton-in { /* BOTON LINKEDIN */
-  font-size: 2rem;
-  color: #0077B5;
-}
 .flex-pint .blog-publicidad { /* PUBLICIDAD CHICA */
   height: 21vh;
   width: auto;
   margin: 0.5rem;
+}
+.flex-pint .blog-fotito {
+  border-radius: 50%;
+  display: none;
+}
+@media screen and (min-width: 640px) {
+  .flex-pint .blog-fotito {
+    display: block;
+  }
+}
+.flex-pint .boton-in { /* BOTON LINKEDIN */
+  font-size: 2rem;
+  color: #0077B5;
 }
 
 .start-pint {

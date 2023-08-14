@@ -15,15 +15,6 @@
     border-radius: 50%;
 }
 
-.blog-fotito {
-    @extend %foto-pint;
-    border-radius: 50%;
-    display: none;
-    @media screen and (min-width: 640px) {
-        display: block;
-    }
-}
-
 .footer-maps { /* MAPS FOOTER */
     @extend %foto-pint;
     height: 66vh;
